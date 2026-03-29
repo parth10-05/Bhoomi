@@ -1,0 +1,383 @@
+{
+    "generated_at": "2025-07-10T05:30:00",
+    "city_id": "GJ_AHM",
+    "total_prescriptions": 14,
+    "prescriptions": [
+        {
+            "prescription_id": "RX_001",
+            "rule_id": "R1_PLANTATION_PATCH",
+            "rule_name": "Plantation Patch",
+            "receiver_grid": "GJ_AHM_R010_C010",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R010_C010",
+            "priority": "P1",
+            "action": "Establish native plantation patch (min 0.5 ha) with drought-resistant species (Neem, Babool, Karanj)",
+            "rationale": "NDVI at 0.09 (critically low vegetation) with built-up area < 50%. Grid has extreme heat (LST 44.2°C) and barren land suitable for plantation.",
+            "evidence": {
+                "ndvi": 0.09,
+                "built_pct": 42,
+                "bare_pct": 28,
+                "lst_celsius": 44.2,
+                "vhi": 0.21
+            },
+            "expected_impact": {
+                "ndvi_delta": "+0.08 to +0.15 over 24 months",
+                "lst_delta": "-1.5 to -3.0°C over 36 months",
+                "carbon_delta": "-0.10 to -0.20 (shift toward sink)"
+            },
+            "timeline_months": 24,
+            "cost_estimate_inr": 450000,
+            "confidence": 0.82
+        },
+        {
+            "prescription_id": "RX_002",
+            "rule_id": "R1_PLANTATION_PATCH",
+            "rule_name": "Plantation Patch",
+            "receiver_grid": "GJ_AHM_R010_C008",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R010_C008",
+            "priority": "P1",
+            "action": "Emergency afforestation with heat-tolerant species; establish green island in industrial zone",
+            "rationale": "Critically low NDVI (0.06) in extreme heat zone (LST 46.0°C). Severe drought risk (0.82). Built-up below 50% threshold allows intervention.",
+            "evidence": {
+                "ndvi": 0.06,
+                "built_pct": 38,
+                "bare_pct": 35,
+                "lst_celsius": 46.0,
+                "vhi": 0.15
+            },
+            "expected_impact": {
+                "ndvi_delta": "+0.10 to +0.18 over 24 months",
+                "lst_delta": "-2.0 to -4.0°C over 36 months",
+                "carbon_delta": "-0.15 to -0.25 (significant sink potential)"
+            },
+            "timeline_months": 30,
+            "cost_estimate_inr": 680000,
+            "confidence": 0.85
+        },
+        {
+            "prescription_id": "RX_003",
+            "rule_id": "R1_PLANTATION_PATCH",
+            "rule_name": "Plantation Patch",
+            "receiver_grid": "GJ_AHM_R015_C020",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R015_C020",
+            "priority": "P1",
+            "action": "Plant drought-resistant tree cover in barren patches; prioritize roadside and boundary plantation",
+            "rationale": "NDVI at 0.08 with built-up below threshold. Extreme heat (45.0°C) and high drought risk (0.78) make this area a priority for green cover.",
+            "evidence": {
+                "ndvi": 0.08,
+                "built_pct": 44,
+                "bare_pct": 30,
+                "lst_celsius": 45.0,
+                "vhi": 0.18
+            },
+            "expected_impact": {
+                "ndvi_delta": "+0.09 to +0.16 over 24 months",
+                "lst_delta": "-1.8 to -3.5°C over 36 months",
+                "carbon_delta": "-0.12 to -0.22 (shift toward sink)"
+            },
+            "timeline_months": 24,
+            "cost_estimate_inr": 520000,
+            "confidence": 0.80
+        },
+        {
+            "prescription_id": "RX_004",
+            "rule_id": "R2_GREEN_BUFFER",
+            "rule_name": "Green Buffer Zone",
+            "receiver_grid": "GJ_AHM_R010_C009",
+            "source_grid": "GJ_AHM_R010_C008",
+            "intervention_zone": "GJ_AHM_R010_C009",
+            "priority": "P1",
+            "action": "Create 200m green buffer strip on western boundary of R010_C009 to block pollutant transport from industrial R010_C008",
+            "rationale": "Upwind grid R010_C008 has extreme SO₂ (185 µg/m³) and NO₂ (4200 µg/m³). Prevailing west wind carries pollutants into R010_C009. Buffer zone needed at boundary.",
+            "evidence": {
+                "source_aqi": 3500,
+                "source_so2": 185,
+                "source_no2": 4200,
+                "receiver_aqi": 2200,
+                "wind_dir_deg": 270,
+                "wind_speed_ms": 4.5,
+                "boundary_side": "west"
+            },
+            "expected_impact": {
+                "aqi_delta": "-15% to -25% reduction in receiver grid",
+                "so2_delta": "-20% to -35% filtering effect",
+                "green_cover_added_ha": 2.5
+            },
+            "timeline_months": 18,
+            "cost_estimate_inr": 380000,
+            "confidence": 0.78
+        },
+        {
+            "prescription_id": "RX_005",
+            "rule_id": "R2_GREEN_BUFFER",
+            "rule_name": "Green Buffer Zone",
+            "receiver_grid": "GJ_AHM_R010_C010",
+            "source_grid": "GJ_AHM_R010_C008",
+            "intervention_zone": "GJ_AHM_R010_C009",
+            "priority": "P2",
+            "action": "Extend green buffer in R010_C009 to protect central R010_C010 from pollutant drift originating at R010_C008",
+            "rationale": "R010_C008's heavy SO₂ emissions (185 µg/m³) reach R010_C010 via intermediate R010_C009. Secondary buffer reinforcement needed.",
+            "evidence": {
+                "source_aqi": 3500,
+                "source_so2": 185,
+                "receiver_aqi": 2850,
+                "wind_dir_deg": 270,
+                "wind_speed_ms": 4.5,
+                "boundary_side": "west"
+            },
+            "expected_impact": {
+                "aqi_delta": "-10% to -18% reduction in R010_C010",
+                "so2_delta": "-12% to -22% additional filtering"
+            },
+            "timeline_months": 18,
+            "cost_estimate_inr": 250000,
+            "confidence": 0.72
+        },
+        {
+            "prescription_id": "RX_006",
+            "rule_id": "R3_COOLING_CORRIDOR",
+            "rule_name": "Cooling Corridor",
+            "receiver_grid": "GJ_AHM_R010_C010",
+            "source_grid": "GJ_AHM_R010_C008",
+            "intervention_zone": "GJ_AHM_R010_C010",
+            "priority": "P1",
+            "action": "Create cooling corridor with continuous tree canopy along east-west roads in R010_C010 to counteract heat island from R010_C008",
+            "rationale": "Neighbor R010_C008 has extreme LST (46.0°C) radiating heat into R010_C010 (44.2°C). Both have NDVI < 0.20 and built-up > 38%. Cooling corridor needed to break heat transfer.",
+            "evidence": {
+                "neighbor_lst": 46.0,
+                "self_lst": 44.2,
+                "neighbor_ndvi": 0.06,
+                "self_ndvi": 0.09,
+                "neighbor_built_pct": 38,
+                "self_built_pct": 42
+            },
+            "expected_impact": {
+                "lst_delta": "-2.5 to -4.0°C along corridor in 36 months",
+                "ndvi_delta": "+0.12 to +0.20 along corridor",
+                "thermal_comfort": "Significant improvement in pedestrian comfort index"
+            },
+            "timeline_months": 36,
+            "cost_estimate_inr": 720000,
+            "confidence": 0.75
+        },
+        {
+            "prescription_id": "RX_007",
+            "rule_id": "R3_COOLING_CORRIDOR",
+            "rule_name": "Cooling Corridor",
+            "receiver_grid": "GJ_AHM_R011_C010",
+            "source_grid": "GJ_AHM_R010_C010",
+            "intervention_zone": "GJ_AHM_R011_C010",
+            "priority": "P2",
+            "action": "Extend cooling corridor southward from R010_C010 into R011_C010 with shade trees and reflective surfaces",
+            "rationale": "R010_C010 heat (44.2°C) propagates south to R011_C010 (43.0°C). Both have critically low NDVI (0.09, 0.11). Connected corridor provides continuous thermal relief.",
+            "evidence": {
+                "neighbor_lst": 44.2,
+                "self_lst": 43.0,
+                "neighbor_ndvi": 0.09,
+                "self_ndvi": 0.11,
+                "neighbor_built_pct": 42,
+                "self_built_pct": 45
+            },
+            "expected_impact": {
+                "lst_delta": "-2.0 to -3.5°C in 36 months",
+                "ndvi_delta": "+0.10 to +0.18 along corridor"
+            },
+            "timeline_months": 36,
+            "cost_estimate_inr": 650000,
+            "confidence": 0.73
+        },
+        {
+            "prescription_id": "RX_008",
+            "rule_id": "R4_DROUGHT_RECHARGE",
+            "rule_name": "Drought Recharge Zone",
+            "receiver_grid": "GJ_AHM_R010_C010",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R010_C010",
+            "priority": "P1",
+            "action": "Install rainwater harvesting and groundwater recharge structures; construct percolation tanks in available open spaces",
+            "rationale": "VHI at 0.21 (severe vegetation health stress). Multiple surrounding grids also show VHI < 0.25 (R010_C008: 0.15, R011_C010: 0.23, R010_C011: 0.25). Cluster drought pattern detected.",
+            "evidence": {
+                "self_vhi": 0.21,
+                "surrounding_vhi_below_025": 3,
+                "surrounding_grids_affected": [
+                    "GJ_AHM_R010_C008",
+                    "GJ_AHM_R011_C010",
+                    "GJ_AHM_R010_C011"
+                ],
+                "drought_risk": 0.74,
+                "soil_moisture": 0.06
+            },
+            "expected_impact": {
+                "vhi_delta": "+0.10 to +0.20 over 18 months",
+                "soil_moisture_delta": "+0.04 to +0.08",
+                "drought_risk_delta": "-0.15 to -0.25"
+            },
+            "timeline_months": 18,
+            "cost_estimate_inr": 550000,
+            "confidence": 0.80
+        },
+        {
+            "prescription_id": "RX_009",
+            "rule_id": "R4_DROUGHT_RECHARGE",
+            "rule_name": "Drought Recharge Zone",
+            "receiver_grid": "GJ_AHM_R010_C008",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R010_C008",
+            "priority": "P1",
+            "action": "Emergency drought mitigation: install check dams, percolation pits, and contour bunding in barren zones",
+            "rationale": "Most severe drought stress in study area. VHI 0.15, drought risk 0.82, soil moisture 0.05. Four or more surrounding grids also below VHI 0.25 threshold.",
+            "evidence": {
+                "self_vhi": 0.15,
+                "surrounding_vhi_below_025": 4,
+                "surrounding_grids_affected": [
+                    "GJ_AHM_R010_C009",
+                    "GJ_AHM_R010_C010",
+                    "GJ_AHM_R011_C010",
+                    "GJ_AHM_R009_C010"
+                ],
+                "drought_risk": 0.82,
+                "soil_moisture": 0.05
+            },
+            "expected_impact": {
+                "vhi_delta": "+0.12 to +0.22 over 18 months",
+                "soil_moisture_delta": "+0.06 to +0.10",
+                "drought_risk_delta": "-0.20 to -0.30"
+            },
+            "timeline_months": 12,
+            "cost_estimate_inr": 780000,
+            "confidence": 0.83
+        },
+        {
+            "prescription_id": "RX_010",
+            "rule_id": "R4_DROUGHT_RECHARGE",
+            "rule_name": "Drought Recharge Zone",
+            "receiver_grid": "GJ_AHM_R015_C020",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R015_C020",
+            "priority": "P1",
+            "action": "Install managed aquifer recharge system with rooftop rainwater harvesting mandate in 500m radius",
+            "rationale": "VHI at 0.18 with drought risk 0.78. Soil moisture critically low at 0.07. Isolated severe drought cell requiring direct intervention.",
+            "evidence": {
+                "self_vhi": 0.18,
+                "surrounding_vhi_below_025": 2,
+                "drought_risk": 0.78,
+                "soil_moisture": 0.07
+            },
+            "expected_impact": {
+                "vhi_delta": "+0.10 to +0.18 over 18 months",
+                "soil_moisture_delta": "+0.05 to +0.09",
+                "drought_risk_delta": "-0.18 to -0.28"
+            },
+            "timeline_months": 15,
+            "cost_estimate_inr": 620000,
+            "confidence": 0.78
+        },
+        {
+            "prescription_id": "RX_011",
+            "rule_id": "R5_WINDBREAK",
+            "rule_name": "Windbreak Barrier",
+            "receiver_grid": "GJ_AHM_R010_C008",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R010_C008",
+            "priority": "P2",
+            "action": "Plant multi-row windbreak on western boundary using Casuarina and Eucalyptus to reduce dust and pollutant transport",
+            "rationale": "AQI 350 (extreme) with wind speed > 4 m/s and bare ground 35%. Wind-borne dust and industrial particulates need physical barrier.",
+            "evidence": {
+                "aqi_proxy": 3500,
+                "wind_speed_ms": 4.8,
+                "wind_dir_deg": 265,
+                "bare_pct": 35,
+                "dominant_lulc": "barren"
+            },
+            "expected_impact": {
+                "aqi_delta": "-20% to -35% downwind",
+                "dust_reduction": "Significant reduction in PM2.5 and PM10",
+                "bare_pct_delta": "-8% to -15%"
+            },
+            "timeline_months": 24,
+            "cost_estimate_inr": 420000,
+            "confidence": 0.76
+        },
+        {
+            "prescription_id": "RX_012",
+            "rule_id": "R5_WINDBREAK",
+            "rule_name": "Windbreak Barrier",
+            "receiver_grid": "GJ_AHM_R015_C020",
+            "source_grid": null,
+            "intervention_zone": "GJ_AHM_R015_C020",
+            "priority": "P2",
+            "action": "Install shelterbelt plantation along exposed boundaries to reduce wind-borne pollution in degraded area",
+            "rationale": "AQI 320 with persistent winds (> 4 m/s) and 30% bare ground. Windbreak will trap particulates and reduce downwind exposure.",
+            "evidence": {
+                "aqi_proxy": 3200,
+                "wind_speed_ms": 4.2,
+                "wind_dir_deg": 255,
+                "bare_pct": 30,
+                "dominant_lulc": "sparse_vegetation"
+            },
+            "expected_impact": {
+                "aqi_delta": "-18% to -30% downwind",
+                "dust_reduction": "Moderate reduction in wind-carried PM",
+                "bare_pct_delta": "-6% to -12%"
+            },
+            "timeline_months": 24,
+            "cost_estimate_inr": 350000,
+            "confidence": 0.74
+        },
+        {
+            "prescription_id": "RX_013",
+            "rule_id": "R2_GREEN_BUFFER",
+            "rule_name": "Green Buffer Zone",
+            "receiver_grid": "GJ_AHM_R012_C016",
+            "source_grid": "GJ_AHM_R015_C020",
+            "intervention_zone": "GJ_AHM_R012_C016",
+            "priority": "P2",
+            "action": "Create green buffer on southeast boundary to filter pollutants from industrial zone in R015_C020 area",
+            "rationale": "Downwind receptor from high-pollution R015_C020 zone (AQI 320). SO₂ at 68 µg/m³ in R012_C016 suggests cross-grid pollutant transport.",
+            "evidence": {
+                "source_aqi": 3200,
+                "source_so2": 95,
+                "receiver_so2": 68,
+                "receiver_aqi": 2100,
+                "wind_dir_deg": 315,
+                "wind_speed_ms": 3.8,
+                "boundary_side": "southeast"
+            },
+            "expected_impact": {
+                "aqi_delta": "-12% to -20% reduction in receiver grid",
+                "so2_delta": "-15% to -25% filtering"
+            },
+            "timeline_months": 20,
+            "cost_estimate_inr": 320000,
+            "confidence": 0.70
+        },
+        {
+            "prescription_id": "RX_014",
+            "rule_id": "R3_COOLING_CORRIDOR",
+            "rule_name": "Cooling Corridor",
+            "receiver_grid": "GJ_AHM_R010_C011",
+            "source_grid": "GJ_AHM_R010_C010",
+            "intervention_zone": "GJ_AHM_R010_C011",
+            "priority": "P2",
+            "action": "Create east-west green corridor connecting R010_C010 and R010_C011 to dissipate concentrated heat island",
+            "rationale": "R010_C010 radiates heat (44.2°C) eastward into R010_C011 (43.5°C). Both have low NDVI and high built-up. Connected corridor needed.",
+            "evidence": {
+                "neighbor_lst": 44.2,
+                "self_lst": 43.5,
+                "neighbor_ndvi": 0.09,
+                "self_ndvi": 0.12,
+                "neighbor_built_pct": 42,
+                "self_built_pct": 40
+            },
+            "expected_impact": {
+                "lst_delta": "-1.8 to -3.2°C in 36 months",
+                "ndvi_delta": "+0.08 to +0.15 along corridor"
+            },
+            "timeline_months": 36,
+            "cost_estimate_inr": 580000,
+            "confidence": 0.71
+        }
+    ]
+}

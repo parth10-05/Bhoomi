@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --eco-bg: #0a0f0a;
+  --eco-panel: rgba(10, 15, 10, 0.85);
+  --eco-border: rgba(255, 255, 255, 0.08);
+  --eco-green: #4ade80;
+  --eco-amber: #f59e0b;
+  --eco-red: #ef4444;
+  --eco-blue: #3b82f6;
+  --eco-text: #e5e7eb;
+  --eco-muted: #6b7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--eco-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--eco-text);
+}
+
+/* Mapbox overrides */
+.mapboxgl-canvas {
+  cursor: crosshair !important;
+}
+.mapboxgl-canvas:active {
+  cursor: crosshair !important;
+}
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+
+/* Glassmorphism panels */
+.glass-panel {
+  background: var(--eco-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--eco-border);
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+/* Pulsing animations */
+@keyframes pulse-red {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; box-shadow: 0 0 4px #4ade80; }
+  50% { opacity: 0.6; box-shadow: 0 0 12px #4ade80; }
+}
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+}
+.pulse-red { animation: pulse-red 1.5s ease-in-out infinite; }
+.pulse-green { animation: pulse-green 2s ease-in-out infinite; }
+.pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
+
+/* Toggle switch */
+.toggle-switch {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.toggle-switch.active {
+  background: var(--eco-green);
+}
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.toggle-switch.active::after {
+  transform: translateX(16px);
+}
+
+/* Year pill buttons */
+.year-pill {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--eco-muted);
+}
+.year-pill.active {
+  background: var(--eco-green);
+  color: #000;
+  border-color: var(--eco-green);
+}
+
+/* Badge styles */
+.source-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease-out forwards; }
+
+/* Recharts dark theme overrides */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: rgba(255, 255, 255, 0.06) !important;
+}
+.recharts-text {
+  fill: var(--eco-muted) !important;
+  font-size: 10px !important;
+}

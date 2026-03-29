@@ -1,0 +1,352 @@
+{
+    "generated_at": "2025-07-10T05:30:00",
+    "city_id": "GJ_AHM",
+    "city_name": "Ahmedabad",
+    "report_month": "2025-06",
+    "city_summary": {
+        "total_grids_analyzed": 1183,
+        "grids_with_anomalies": 8,
+        "grids_with_prescriptions": 10,
+        "overall_risk_level": "Moderate-High",
+        "key_concerns": [
+            "Urban Heat Island intensification in central Ahmedabad (R010 corridor)",
+            "Cross-grid pollutant transport from industrial zones (R010_C008 → R010_C009/C010)",
+            "Cluster drought pattern affecting 5+ contiguous grids in urban core",
+            "Carbon source dominance in built-up zones with limited sink capacity"
+        ],
+        "positive_trends": [
+            "Peripheral grids (R015_C015, R020_C015) showing improved vegetation health",
+            "Rainfall projections suggest monsoon relief in 90-180 day horizon",
+            "Carbon sink capacity improving in southern agricultural zones"
+        ],
+        "avg_lst": 40.8,
+        "avg_ndvi": 0.19,
+        "avg_aqi": 2150,
+        "avg_drought_risk": 0.48
+    },
+    "risk_grids": [
+        {
+            "grid_id": "GJ_AHM_R010_C008",
+            "rank": 1,
+            "risk_score": 9.2,
+            "current_values": {
+                "lst_celsius": 46.0,
+                "ndvi": 0.06,
+                "aqi_proxy": 3500,
+                "so2_ugm3": 185,
+                "no2_ugm3": 4200,
+                "vhi": 0.15,
+                "soil_moisture": 0.05,
+                "drought_risk": 0.82,
+                "carbon_balance": 0.62
+            },
+            "factors": [
+                "Industrial zone with highest pollutant concentrations in study area",
+                "Near-zero vegetation cover (NDVI 0.06) eliminates natural cooling",
+                "Severe drought stress with VHI 0.15 (critical threshold)",
+                "Strong carbon source (+0.62) from industrial emissions",
+                "Wind-driven pollutant export affecting 2-3 downwind grids"
+            ],
+            "human_summary": "This grid represents the most environmentally stressed zone in Ahmedabad. Located in the western industrial belt, it exhibits extreme heat (46°C), virtually no vegetation, severe drought, and the worst air quality. Its pollutants are carried eastward by prevailing winds, degrading neighboring grids R010_C009 and R010_C010.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R010_C008",
+                "neighbors": [
+                    "GJ_AHM_R009_C007",
+                    "GJ_AHM_R009_C008",
+                    "GJ_AHM_R009_C009",
+                    "GJ_AHM_R010_C007",
+                    "GJ_AHM_R010_C009",
+                    "GJ_AHM_R011_C007",
+                    "GJ_AHM_R011_C008",
+                    "GJ_AHM_R011_C009"
+                ],
+                "avg_neighbor_lst": 40.2,
+                "avg_neighbor_ndvi": 0.20,
+                "heat_gradient": "Center is 5.8°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.6x neighborhood average"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C010",
+            "rank": 2,
+            "risk_score": 8.5,
+            "current_values": {
+                "lst_celsius": 44.2,
+                "ndvi": 0.09,
+                "aqi_proxy": 2850,
+                "so2_ugm3": 142,
+                "no2_ugm3": 3200,
+                "vhi": 0.21,
+                "soil_moisture": 0.06,
+                "drought_risk": 0.74,
+                "carbon_balance": 0.38
+            },
+            "factors": [
+                "Central urban heat island with compound stress from heat + drought + pollution",
+                "Receives pollutant transport from industrial R010_C008 via prevailing winds",
+                "Critically low NDVI (0.09) in densely built-up zone",
+                "Cluster drought: 3 of 8 neighbors also below VHI 0.25",
+                "Carbon source contributing to regional emission load"
+            ],
+            "human_summary": "Located in the central urban core, this grid suffers from a triple threat of extreme heat (44.2°C), poor air quality (AQI 285), and severe drought stress (VHI 0.21). It receives windborne pollutants from the industrial R010_C008 to its west. Intervention requires coordinated cross-grid approach.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R010_C010",
+                "neighbors": [
+                    "GJ_AHM_R009_C009",
+                    "GJ_AHM_R009_C010",
+                    "GJ_AHM_R009_C011",
+                    "GJ_AHM_R010_C009",
+                    "GJ_AHM_R010_C011",
+                    "GJ_AHM_R011_C009",
+                    "GJ_AHM_R011_C010",
+                    "GJ_AHM_R011_C011"
+                ],
+                "avg_neighbor_lst": 41.0,
+                "avg_neighbor_ndvi": 0.18,
+                "heat_gradient": "Center is 3.2°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.3x neighborhood average"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R015_C020",
+            "rank": 3,
+            "risk_score": 8.1,
+            "current_values": {
+                "lst_celsius": 45.0,
+                "ndvi": 0.08,
+                "aqi_proxy": 3200,
+                "so2_ugm3": 95,
+                "no2_ugm3": 3800,
+                "vhi": 0.18,
+                "soil_moisture": 0.07,
+                "drought_risk": 0.78,
+                "carbon_balance": 0.52
+            },
+            "factors": [
+                "Isolated industrial hotspot in southeastern Ahmedabad",
+                "Second highest AQI (320) in study area",
+                "Extreme heat with minimal vegetation buffer",
+                "Strong carbon source from concentrated industrial activity",
+                "Severe drought stress compounding environmental degradation"
+            ],
+            "human_summary": "An isolated industrial zone in southeast Ahmedabad showing extreme environmental degradation. Despite being distant from the main urban core, it mirrors the same patterns of extreme heat, negligible vegetation, and severe air quality issues. Its isolation makes it a priority for targeted industrial emission controls and afforestation.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R015_C020",
+                "neighbors": [
+                    "GJ_AHM_R014_C019",
+                    "GJ_AHM_R014_C020",
+                    "GJ_AHM_R014_C021",
+                    "GJ_AHM_R015_C019",
+                    "GJ_AHM_R015_C021",
+                    "GJ_AHM_R016_C019",
+                    "GJ_AHM_R016_C020",
+                    "GJ_AHM_R016_C021"
+                ],
+                "avg_neighbor_lst": 39.5,
+                "avg_neighbor_ndvi": 0.22,
+                "heat_gradient": "Center is 5.5°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.7x neighborhood average"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R011_C010",
+            "rank": 4,
+            "risk_score": 7.8,
+            "current_values": {
+                "lst_celsius": 43.0,
+                "ndvi": 0.11,
+                "aqi_proxy": 2400,
+                "so2_ugm3": 75,
+                "no2_ugm3": 2800,
+                "vhi": 0.23,
+                "soil_moisture": 0.07,
+                "drought_risk": 0.68,
+                "carbon_balance": 0.32
+            },
+            "factors": [
+                "Southern extension of central heat island cluster",
+                "Heat propagation from R010_C010 to the north",
+                "Low vegetation cover in densely built-up zone",
+                "Moderate-high drought risk as part of cluster pattern"
+            ],
+            "human_summary": "Directly south of the critical R010_C010 zone, this grid extends the urban heat island southward. While slightly less severe, it forms part of a connected heat cluster that requires coordinated cooling corridor interventions spanning both grids.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R011_C010",
+                "neighbors": [
+                    "GJ_AHM_R010_C009",
+                    "GJ_AHM_R010_C010",
+                    "GJ_AHM_R010_C011",
+                    "GJ_AHM_R011_C009",
+                    "GJ_AHM_R011_C011",
+                    "GJ_AHM_R012_C009",
+                    "GJ_AHM_R012_C010",
+                    "GJ_AHM_R012_C011"
+                ],
+                "avg_neighbor_lst": 40.5,
+                "avg_neighbor_ndvi": 0.19,
+                "heat_gradient": "Center is 2.5°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.2x neighborhood average"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C011",
+            "rank": 5,
+            "risk_score": 7.2,
+            "current_values": {
+                "lst_celsius": 43.5,
+                "ndvi": 0.12,
+                "aqi_proxy": 2650,
+                "so2_ugm3": 55,
+                "no2_ugm3": 2900,
+                "vhi": 0.25,
+                "soil_moisture": 0.08,
+                "drought_risk": 0.62,
+                "carbon_balance": 0.25
+            },
+            "factors": [
+                "Eastern edge of main heat island cluster",
+                "Elevated temperatures from westward heat propagation",
+                "Moderate pollution from cross-grid transport",
+                "Borderline VHI indicating vegetation health stress"
+            ],
+            "human_summary": "The eastern boundary of the R010 heat island cluster. While less extreme than its western neighbors, it still shows significant stress. This grid is a critical transition zone where targeted intervention could prevent eastward expansion of the heat island.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R010_C011",
+                "neighbors": [
+                    "GJ_AHM_R009_C010",
+                    "GJ_AHM_R009_C011",
+                    "GJ_AHM_R009_C012",
+                    "GJ_AHM_R010_C010",
+                    "GJ_AHM_R010_C012",
+                    "GJ_AHM_R011_C010",
+                    "GJ_AHM_R011_C011",
+                    "GJ_AHM_R011_C012"
+                ],
+                "avg_neighbor_lst": 40.8,
+                "avg_neighbor_ndvi": 0.19,
+                "heat_gradient": "Center is 2.7°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.2x neighborhood average"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C009",
+            "rank": 6,
+            "risk_score": 6.8,
+            "current_values": {
+                "lst_celsius": 42.1,
+                "ndvi": 0.15,
+                "aqi_proxy": 2200,
+                "so2_ugm3": 85,
+                "no2_ugm3": 2400,
+                "vhi": 0.30,
+                "soil_moisture": 0.10,
+                "drought_risk": 0.55,
+                "carbon_balance": 0.18
+            },
+            "factors": [
+                "Primary receptor of industrial pollution from R010_C008",
+                "SO₂ elevated (85 µg/m³) due to cross-grid transport",
+                "Moderate heat stress with declining trend",
+                "Key location for green buffer zone intervention"
+            ],
+            "human_summary": "Positioned between the industrial R010_C008 and urban core R010_C010, this grid serves as a pollution corridor. Its relatively moderate NDVI (0.15) makes it an ideal candidate for green buffer installation to protect the eastern urban areas from industrial emissions.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R010_C009",
+                "neighbors": [
+                    "GJ_AHM_R009_C008",
+                    "GJ_AHM_R009_C009",
+                    "GJ_AHM_R009_C010",
+                    "GJ_AHM_R010_C008",
+                    "GJ_AHM_R010_C010",
+                    "GJ_AHM_R011_C008",
+                    "GJ_AHM_R011_C009",
+                    "GJ_AHM_R011_C010"
+                ],
+                "avg_neighbor_lst": 41.5,
+                "avg_neighbor_ndvi": 0.16,
+                "heat_gradient": "Center is 0.6°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 0.8x neighborhood average (lower than industrial neighbor)"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R012_C016",
+            "rank": 7,
+            "risk_score": 6.2,
+            "current_values": {
+                "lst_celsius": 42.5,
+                "ndvi": 0.14,
+                "aqi_proxy": 2100,
+                "so2_ugm3": 68,
+                "no2_ugm3": 2500,
+                "vhi": 0.28,
+                "soil_moisture": 0.09,
+                "drought_risk": 0.58,
+                "carbon_balance": 0.15
+            },
+            "factors": [
+                "Transitional zone between urban core and peri-urban area",
+                "Emerging heat stress trending upward over 6 months",
+                "Moderate pollution from mixed land use",
+                "Declining vegetation health needs monitoring"
+            ],
+            "human_summary": "A transitional grid showing emerging environmental stress. While not yet critical, its worsening trends in heat and vegetation health suggest it could develop into a hotspot within 6-12 months without preventive intervention.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R012_C016",
+                "neighbors": [
+                    "GJ_AHM_R011_C015",
+                    "GJ_AHM_R011_C016",
+                    "GJ_AHM_R011_C017",
+                    "GJ_AHM_R012_C015",
+                    "GJ_AHM_R012_C017",
+                    "GJ_AHM_R013_C015",
+                    "GJ_AHM_R013_C016",
+                    "GJ_AHM_R013_C017"
+                ],
+                "avg_neighbor_lst": 39.0,
+                "avg_neighbor_ndvi": 0.22,
+                "heat_gradient": "Center is 3.5°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.3x neighborhood average"
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R018_C012",
+            "rank": 8,
+            "risk_score": 4.5,
+            "current_values": {
+                "lst_celsius": 37.5,
+                "ndvi": 0.38,
+                "aqi_proxy": 1500,
+                "so2_ugm3": 28,
+                "no2_ugm3": 1700,
+                "vhi": 0.52,
+                "soil_moisture": 0.20,
+                "drought_risk": 0.22,
+                "carbon_balance": -0.30
+            },
+            "factors": [
+                "Agricultural zone with healthy vegetation but declining trend",
+                "Moderate air quality from nearby road corridor",
+                "Good carbon sink capacity being maintained",
+                "Monitor for potential urban encroachment"
+            ],
+            "human_summary": "A relatively healthy agricultural grid in southern Ahmedabad serving as an important carbon sink. While currently stable, monitoring is needed to ensure urban expansion doesn't compromise its environmental services. This grid provides critical ecosystem services for the city.",
+            "neighbourhood_3x3": {
+                "center": "GJ_AHM_R018_C012",
+                "neighbors": [
+                    "GJ_AHM_R017_C011",
+                    "GJ_AHM_R017_C012",
+                    "GJ_AHM_R017_C013",
+                    "GJ_AHM_R018_C011",
+                    "GJ_AHM_R018_C013",
+                    "GJ_AHM_R019_C011",
+                    "GJ_AHM_R019_C012",
+                    "GJ_AHM_R019_C013"
+                ],
+                "avg_neighbor_lst": 36.0,
+                "avg_neighbor_ndvi": 0.35,
+                "heat_gradient": "Center is 1.5°C hotter than neighborhood average",
+                "pollution_gradient": "Center AQI is 1.1x neighborhood average"
+            }
+        }
+    ]
+}

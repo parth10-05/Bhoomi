@@ -1,0 +1,253 @@
+{
+    "generated_at": "2025-07-10T05:30:00",
+    "city_id": "GJ_AHM",
+    "evaluation_period": "2024-01 to 2025-06",
+    "total_grids_evaluated": 1183,
+    "models": [
+        {
+            "model_id": "sarima",
+            "model_name": "SARIMA (Seasonal ARIMA)",
+            "version": "1.2.0",
+            "metrics_covered": [
+                "aqi_proxy",
+                "no2_ugm3",
+                "so2_ugm3",
+                "co_ugm3",
+                "lst_celsius",
+                "soil_moisture",
+                "rainfall_mm"
+            ],
+            "performance": {
+                "r2": 0.82,
+                "mae": 0.045,
+                "rmse": 0.068,
+                "mape": 8.2,
+                "training_samples": 70980,
+                "test_samples": 17745,
+                "cross_validation_folds": 5
+            },
+            "horizon_performance": {
+                "1d": {
+                    "r2": 0.91,
+                    "mae": 0.028,
+                    "rmse": 0.042
+                },
+                "7d": {
+                    "r2": 0.87,
+                    "mae": 0.036,
+                    "rmse": 0.054
+                },
+                "30d": {
+                    "r2": 0.82,
+                    "mae": 0.048,
+                    "rmse": 0.072
+                },
+                "90d": {
+                    "r2": 0.75,
+                    "mae": 0.062,
+                    "rmse": 0.094
+                },
+                "180d": {
+                    "r2": 0.68,
+                    "mae": 0.078,
+                    "rmse": 0.118
+                }
+            },
+            "notes": "Best performance for short-term air quality and temperature forecasting. Seasonal decomposition captures monsoon cycles well."
+        },
+        {
+            "model_id": "prophet",
+            "model_name": "Facebook Prophet",
+            "version": "1.1.5",
+            "metrics_covered": [
+                "aqi_proxy",
+                "no2_ugm3",
+                "so2_ugm3",
+                "co_ugm3",
+                "lst_celsius",
+                "soil_moisture",
+                "rainfall_mm"
+            ],
+            "performance": {
+                "r2": 0.78,
+                "mae": 0.052,
+                "rmse": 0.079,
+                "mape": 9.8,
+                "training_samples": 70980,
+                "test_samples": 17745,
+                "cross_validation_folds": 5
+            },
+            "horizon_performance": {
+                "1d": {
+                    "r2": 0.85,
+                    "mae": 0.038,
+                    "rmse": 0.056
+                },
+                "7d": {
+                    "r2": 0.82,
+                    "mae": 0.044,
+                    "rmse": 0.066
+                },
+                "30d": {
+                    "r2": 0.78,
+                    "mae": 0.055,
+                    "rmse": 0.082
+                },
+                "90d": {
+                    "r2": 0.74,
+                    "mae": 0.065,
+                    "rmse": 0.098
+                },
+                "180d": {
+                    "r2": 0.70,
+                    "mae": 0.072,
+                    "rmse": 0.108
+                }
+            },
+            "notes": "Used primarily for longer horizon forecasts (90d, 180d). Handles trend changes and holiday effects. Better uncertainty quantification than SARIMA."
+        },
+        {
+            "model_id": "lstm",
+            "model_name": "LSTM Neural Network",
+            "version": "2.0.1",
+            "metrics_covered": [
+                "ndvi"
+            ],
+            "performance": {
+                "r2": 0.85,
+                "mae": 0.032,
+                "rmse": 0.048,
+                "mape": 6.5,
+                "training_samples": 70980,
+                "test_samples": 17745,
+                "cross_validation_folds": 5
+            },
+            "horizon_performance": {
+                "1d": {
+                    "r2": 0.92,
+                    "mae": 0.018,
+                    "rmse": 0.027
+                },
+                "7d": {
+                    "r2": 0.90,
+                    "mae": 0.022,
+                    "rmse": 0.033
+                },
+                "30d": {
+                    "r2": 0.85,
+                    "mae": 0.035,
+                    "rmse": 0.052
+                },
+                "90d": {
+                    "r2": 0.79,
+                    "mae": 0.048,
+                    "rmse": 0.072
+                },
+                "180d": {
+                    "r2": 0.73,
+                    "mae": 0.058,
+                    "rmse": 0.087
+                }
+            },
+            "notes": "Specialized for NDVI time series. Captures complex non-linear vegetation growth patterns. 3-layer architecture with 128 units per layer."
+        },
+        {
+            "model_id": "xgboost",
+            "model_name": "XGBoost Gradient Boosting",
+            "version": "1.7.6",
+            "metrics_covered": [
+                "vhi",
+                "drought_risk"
+            ],
+            "performance": {
+                "r2": 0.80,
+                "mae": 0.042,
+                "rmse": 0.063,
+                "mape": 7.8,
+                "training_samples": 70980,
+                "test_samples": 17745,
+                "cross_validation_folds": 5
+            },
+            "horizon_performance": {
+                "1d": {
+                    "r2": 0.88,
+                    "mae": 0.025,
+                    "rmse": 0.038
+                },
+                "7d": {
+                    "r2": 0.85,
+                    "mae": 0.032,
+                    "rmse": 0.048
+                },
+                "30d": {
+                    "r2": 0.80,
+                    "mae": 0.045,
+                    "rmse": 0.068
+                },
+                "90d": {
+                    "r2": 0.74,
+                    "mae": 0.058,
+                    "rmse": 0.087
+                },
+                "180d": {
+                    "r2": 0.68,
+                    "mae": 0.070,
+                    "rmse": 0.105
+                }
+            },
+            "notes": "Used for composite indices (VHI, drought risk) that depend on multiple input features. Feature importance analysis available. 500 estimators with max_depth=6."
+        },
+        {
+            "model_id": "rf",
+            "model_name": "Random Forest Regressor",
+            "version": "1.3.2",
+            "metrics_covered": [
+                "carbon_balance"
+            ],
+            "performance": {
+                "r2": 0.76,
+                "mae": 0.058,
+                "rmse": 0.087,
+                "mape": 11.2,
+                "training_samples": 70980,
+                "test_samples": 17745,
+                "cross_validation_folds": 5
+            },
+            "horizon_performance": {
+                "1d": {
+                    "r2": 0.84,
+                    "mae": 0.035,
+                    "rmse": 0.052
+                },
+                "7d": {
+                    "r2": 0.81,
+                    "mae": 0.042,
+                    "rmse": 0.063
+                },
+                "30d": {
+                    "r2": 0.76,
+                    "mae": 0.058,
+                    "rmse": 0.087
+                },
+                "90d": {
+                    "r2": 0.70,
+                    "mae": 0.072,
+                    "rmse": 0.108
+                },
+                "180d": {
+                    "r2": 0.64,
+                    "mae": 0.085,
+                    "rmse": 0.128
+                }
+            },
+            "notes": "Carbon balance estimation using NDVI, LULC percentages, and emission proxies as features. 200 trees with bootstrap sampling."
+        }
+    ],
+    "ensemble_performance": {
+        "description": "Weighted ensemble combining model predictions based on horizon-specific R² weights",
+        "overall_r2": 0.83,
+        "overall_mae": 0.041,
+        "overall_rmse": 0.062,
+        "overall_mape": 7.5
+    }
+}

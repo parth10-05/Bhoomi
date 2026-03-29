@@ -1,0 +1,464 @@
+{
+    "generated_at": "2025-07-10T05:30:00",
+    "city_id": "GJ_AHM",
+    "month": "2025-06",
+    "total_anomalous_grids": 8,
+    "grids": [
+        {
+            "grid_id": "GJ_AHM_R010_C008",
+            "has_anomaly": true,
+            "anomaly_score": 0.92,
+            "severity": "critical",
+            "description": "Extreme multi-metric stress: record-breaking LST (46.0°C, +3.8 std dev), critically low NDVI (0.06), and severe air quality degradation (AQI 350). Worst-performing grid in study area.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 46.0,
+                    "z_score": 3.8,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 40.2,
+                    "historical_std": 1.53
+                },
+                "ndvi": {
+                    "value": 0.06,
+                    "z_score": -3.2,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.15,
+                    "historical_std": 0.028
+                },
+                "aqi_proxy": {
+                    "value": 3500,
+                    "z_score": 2.9,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 2200,
+                    "historical_std": 448
+                },
+                "vhi": {
+                    "value": 0.15,
+                    "z_score": -2.8,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.30,
+                    "historical_std": 0.054
+                },
+                "soil_moisture": {
+                    "value": 0.05,
+                    "z_score": -2.5,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.12,
+                    "historical_std": 0.028
+                },
+                "drought_risk": {
+                    "value": 0.82,
+                    "z_score": 2.4,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 0.48,
+                    "historical_std": 0.142
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C010",
+            "has_anomaly": true,
+            "anomaly_score": 0.85,
+            "severity": "high",
+            "description": "Urban heat island with compound drought stress. LST 44.2°C (+2.6 std dev) combined with VHI 0.21 and low soil moisture. Air quality degraded (AQI 285).",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 44.2,
+                    "z_score": 2.6,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 39.5,
+                    "historical_std": 1.81
+                },
+                "ndvi": {
+                    "value": 0.09,
+                    "z_score": -2.4,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.16,
+                    "historical_std": 0.029
+                },
+                "aqi_proxy": {
+                    "value": 2850,
+                    "z_score": 2.1,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 1980,
+                    "historical_std": 414
+                },
+                "vhi": {
+                    "value": 0.21,
+                    "z_score": -2.2,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.32,
+                    "historical_std": 0.050
+                },
+                "soil_moisture": {
+                    "value": 0.06,
+                    "z_score": -2.0,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.12,
+                    "historical_std": 0.030
+                },
+                "drought_risk": {
+                    "value": 0.74,
+                    "z_score": 2.0,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 0.45,
+                    "historical_std": 0.145
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R015_C020",
+            "has_anomaly": true,
+            "anomaly_score": 0.81,
+            "severity": "high",
+            "description": "Industrial zone heat anomaly with extreme air quality. LST 45.0°C and AQI 320 both significantly above historical norms. Drought risk elevated.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 45.0,
+                    "z_score": 2.8,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 39.8,
+                    "historical_std": 1.86
+                },
+                "ndvi": {
+                    "value": 0.08,
+                    "z_score": -2.6,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.15,
+                    "historical_std": 0.027
+                },
+                "aqi_proxy": {
+                    "value": 3200,
+                    "z_score": 2.5,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 2100,
+                    "historical_std": 440
+                },
+                "vhi": {
+                    "value": 0.18,
+                    "z_score": -2.4,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.30,
+                    "historical_std": 0.050
+                },
+                "soil_moisture": {
+                    "value": 0.07,
+                    "z_score": -1.8,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.12,
+                    "historical_std": 0.028
+                },
+                "drought_risk": {
+                    "value": 0.78,
+                    "z_score": 2.2,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 0.46,
+                    "historical_std": 0.145
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R011_C010",
+            "has_anomaly": true,
+            "anomaly_score": 0.78,
+            "severity": "high",
+            "description": "Heat-drought compound event. LST 43.0°C with drought risk 0.68 and very low soil moisture. Adjacent to critically stressed R010_C010.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 43.0,
+                    "z_score": 2.3,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 38.8,
+                    "historical_std": 1.83
+                },
+                "ndvi": {
+                    "value": 0.11,
+                    "z_score": -2.0,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.17,
+                    "historical_std": 0.030
+                },
+                "aqi_proxy": {
+                    "value": 2400,
+                    "z_score": 1.5,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 1850,
+                    "historical_std": 367
+                },
+                "vhi": {
+                    "value": 0.23,
+                    "z_score": -1.8,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.33,
+                    "historical_std": 0.056
+                },
+                "soil_moisture": {
+                    "value": 0.07,
+                    "z_score": -2.1,
+                    "anomaly": true,
+                    "direction": "below",
+                    "historical_mean": 0.13,
+                    "historical_std": 0.029
+                },
+                "drought_risk": {
+                    "value": 0.68,
+                    "z_score": 1.9,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 0.42,
+                    "historical_std": 0.137
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C011",
+            "has_anomaly": true,
+            "anomaly_score": 0.72,
+            "severity": "moderate",
+            "description": "Heat spillover from central urban core. LST 43.5°C elevated, NDVI declining. Part of connected heat island cluster spanning R010_C008 through R010_C011.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 43.5,
+                    "z_score": 2.2,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 39.2,
+                    "historical_std": 1.95
+                },
+                "ndvi": {
+                    "value": 0.12,
+                    "z_score": -1.6,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.17,
+                    "historical_std": 0.031
+                },
+                "aqi_proxy": {
+                    "value": 2650,
+                    "z_score": 1.8,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 1920,
+                    "historical_std": 406
+                },
+                "vhi": {
+                    "value": 0.25,
+                    "z_score": -1.5,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.34,
+                    "historical_std": 0.060
+                },
+                "soil_moisture": {
+                    "value": 0.08,
+                    "z_score": -1.4,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.13,
+                    "historical_std": 0.036
+                },
+                "drought_risk": {
+                    "value": 0.62,
+                    "z_score": 1.4,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 0.42,
+                    "historical_std": 0.143
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C009",
+            "has_anomaly": true,
+            "anomaly_score": 0.68,
+            "severity": "moderate",
+            "description": "Pollution receptor anomaly. AQI elevated (220) likely due to transport from heavily polluted R010_C008. SO₂ at 85 µg/m³ suggests industrial cross-grid influence.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 42.1,
+                    "z_score": 1.5,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 39.0,
+                    "historical_std": 2.07
+                },
+                "ndvi": {
+                    "value": 0.15,
+                    "z_score": -1.0,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.18,
+                    "historical_std": 0.030
+                },
+                "aqi_proxy": {
+                    "value": 2200,
+                    "z_score": 2.0,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 1600,
+                    "historical_std": 300
+                },
+                "so2_ugm3": {
+                    "value": 85,
+                    "z_score": 2.3,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 48,
+                    "historical_std": 16.1
+                },
+                "soil_moisture": {
+                    "value": 0.10,
+                    "z_score": -0.8,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.13,
+                    "historical_std": 0.038
+                },
+                "drought_risk": {
+                    "value": 0.55,
+                    "z_score": 1.0,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 0.40,
+                    "historical_std": 0.150
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R012_C016",
+            "has_anomaly": true,
+            "anomaly_score": 0.62,
+            "severity": "moderate",
+            "description": "Emerging heat-vegetation stress. LST 42.5°C trending upward with NDVI declining to 0.14. Transitional zone between urban core and periphery.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 42.5,
+                    "z_score": 2.0,
+                    "anomaly": true,
+                    "direction": "above",
+                    "historical_mean": 38.5,
+                    "historical_std": 2.00
+                },
+                "ndvi": {
+                    "value": 0.14,
+                    "z_score": -1.5,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.19,
+                    "historical_std": 0.033
+                },
+                "aqi_proxy": {
+                    "value": 2100,
+                    "z_score": 1.3,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 1700,
+                    "historical_std": 308
+                },
+                "vhi": {
+                    "value": 0.28,
+                    "z_score": -1.2,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.36,
+                    "historical_std": 0.067
+                },
+                "soil_moisture": {
+                    "value": 0.09,
+                    "z_score": -1.3,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.13,
+                    "historical_std": 0.031
+                },
+                "drought_risk": {
+                    "value": 0.58,
+                    "z_score": 1.2,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 0.40,
+                    "historical_std": 0.150
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R009_C010",
+            "has_anomaly": true,
+            "anomaly_score": 0.55,
+            "severity": "low",
+            "description": "Mild heat anomaly. LST 41.8°C slightly elevated. Grid is transitional between stressed central zone and healthier northern areas.",
+            "metric_scores": {
+                "lst_celsius": {
+                    "value": 41.8,
+                    "z_score": 1.5,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 38.5,
+                    "historical_std": 2.20
+                },
+                "ndvi": {
+                    "value": 0.18,
+                    "z_score": -0.7,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.21,
+                    "historical_std": 0.043
+                },
+                "aqi_proxy": {
+                    "value": 2100,
+                    "z_score": 1.2,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 1700,
+                    "historical_std": 333
+                },
+                "vhi": {
+                    "value": 0.32,
+                    "z_score": -0.6,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.36,
+                    "historical_std": 0.067
+                },
+                "soil_moisture": {
+                    "value": 0.12,
+                    "z_score": -0.3,
+                    "anomaly": false,
+                    "direction": "below",
+                    "historical_mean": 0.13,
+                    "historical_std": 0.033
+                },
+                "drought_risk": {
+                    "value": 0.45,
+                    "z_score": 0.5,
+                    "anomaly": false,
+                    "direction": "above",
+                    "historical_mean": 0.38,
+                    "historical_std": 0.140
+                }
+            }
+        }
+    ]
+}

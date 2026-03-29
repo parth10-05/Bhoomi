@@ -1,0 +1,5565 @@
+{
+    "generated_at": "2025-07-10T05:30:00",
+    "city_id": "GJ_AHM",
+    "grid_size_km": 3.0,
+    "horizons": [
+        "1d",
+        "7d",
+        "30d",
+        "90d",
+        "180d"
+    ],
+    "total_grids": 35,
+    "grids": [
+        {
+            "grid_id": "GJ_AHM_R010_C010",
+            "centroid_lat": 23.0412,
+            "centroid_lng": 72.5812,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0277,
+                    "lng": 72.5667
+                },
+                "ne": {
+                    "lat": 23.0547,
+                    "lng": 72.5957
+                }
+            },
+            "confidence": 0.76,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2850,
+                        "lo": 2400,
+                        "hi": 3300,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2920,
+                        "lo": 2350,
+                        "hi": 3490,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2700,
+                        "lo": 2100,
+                        "hi": 3300,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2500,
+                        "lo": 1800,
+                        "hi": 3200,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2200,
+                        "lo": 1500,
+                        "hi": 2900,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 3200,
+                        "lo": 2800,
+                        "hi": 3600,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3350,
+                        "lo": 2900,
+                        "hi": 3800,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 3100,
+                        "lo": 2600,
+                        "hi": 3600,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2900,
+                        "lo": 2300,
+                        "hi": 3500,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2700,
+                        "lo": 2000,
+                        "hi": 3400,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 142,
+                        "lo": 110,
+                        "hi": 174,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 148,
+                        "lo": 112,
+                        "hi": 184,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 135,
+                        "lo": 100,
+                        "hi": 170,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 120,
+                        "lo": 85,
+                        "hi": 155,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 105,
+                        "lo": 70,
+                        "hi": 140,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 4200,
+                        "lo": 3600,
+                        "hi": 4800,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 4350,
+                        "lo": 3700,
+                        "hi": 5000,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 4000,
+                        "lo": 3300,
+                        "hi": 4700,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 3700,
+                        "lo": 2900,
+                        "hi": 4500,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 3400,
+                        "lo": 2600,
+                        "hi": 4200,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 44.2,
+                        "lo": 42.0,
+                        "hi": 46.4,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 44.8,
+                        "lo": 42.1,
+                        "hi": 47.5,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 43.5,
+                        "lo": 40.5,
+                        "hi": 46.5,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 41.0,
+                        "lo": 37.5,
+                        "hi": 44.5,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 38.2,
+                        "lo": 34.0,
+                        "hi": 42.4,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.09,
+                        "lo": 0.06,
+                        "hi": 0.12,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.09,
+                        "lo": 0.05,
+                        "hi": 0.13,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.10,
+                        "lo": 0.06,
+                        "hi": 0.14,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.12,
+                        "lo": 0.07,
+                        "hi": 0.17,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.14,
+                        "lo": 0.08,
+                        "hi": 0.20,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.21,
+                        "lo": 0.16,
+                        "hi": 0.26,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.20,
+                        "lo": 0.14,
+                        "hi": 0.26,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.22,
+                        "lo": 0.15,
+                        "hi": 0.29,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.25,
+                        "lo": 0.17,
+                        "hi": 0.33,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.28,
+                        "lo": 0.19,
+                        "hi": 0.37,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.06,
+                        "lo": 0.04,
+                        "hi": 0.08,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.06,
+                        "lo": 0.04,
+                        "hi": 0.08,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.07,
+                        "lo": 0.05,
+                        "hi": 0.09,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.09,
+                        "lo": 0.06,
+                        "hi": 0.12,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.11,
+                        "lo": 0.07,
+                        "hi": 0.15,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.74,
+                        "lo": 0.65,
+                        "hi": 0.83,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.76,
+                        "lo": 0.66,
+                        "hi": 0.86,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.72,
+                        "lo": 0.60,
+                        "hi": 0.84,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.65,
+                        "lo": 0.50,
+                        "hi": 0.80,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.55,
+                        "lo": 0.38,
+                        "hi": 0.72,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 2.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 5.2,
+                        "lo": 0.0,
+                        "hi": 18.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 38.0,
+                        "lo": 12.0,
+                        "hi": 85.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 220.0,
+                        "lo": 110.0,
+                        "hi": 380.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 450.0,
+                        "lo": 250.0,
+                        "hi": 700.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.38,
+                        "lo": 0.30,
+                        "hi": 0.46,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.39,
+                        "lo": 0.30,
+                        "hi": 0.48,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.37,
+                        "lo": 0.27,
+                        "hi": 0.47,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.35,
+                        "lo": 0.24,
+                        "hi": 0.46,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.41,
+                        "lo": 0.31,
+                        "hi": 0.51,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C009",
+            "centroid_lat": 23.0412,
+            "centroid_lng": 72.5522,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0277,
+                    "lng": 72.5377
+                },
+                "ne": {
+                    "lat": 23.0547,
+                    "lng": 72.5667
+                }
+            },
+            "confidence": 0.72,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2200,
+                        "lo": 1800,
+                        "hi": 2600,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2300,
+                        "lo": 1850,
+                        "hi": 2750,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2050,
+                        "lo": 1600,
+                        "hi": 2500,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1900,
+                        "lo": 1400,
+                        "hi": 2400,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1750,
+                        "lo": 1200,
+                        "hi": 2300,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2400,
+                        "lo": 2000,
+                        "hi": 2800,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2500,
+                        "lo": 2050,
+                        "hi": 2950,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2300,
+                        "lo": 1800,
+                        "hi": 2800,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2100,
+                        "lo": 1600,
+                        "hi": 2600,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1950,
+                        "lo": 1400,
+                        "hi": 2500,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 85,
+                        "lo": 65,
+                        "hi": 105,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 90,
+                        "lo": 68,
+                        "hi": 112,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 80,
+                        "lo": 58,
+                        "hi": 102,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 72,
+                        "lo": 50,
+                        "hi": 94,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 65,
+                        "lo": 42,
+                        "hi": 88,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 3100,
+                        "lo": 2500,
+                        "hi": 3700,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3250,
+                        "lo": 2600,
+                        "hi": 3900,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2900,
+                        "lo": 2250,
+                        "hi": 3550,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2700,
+                        "lo": 2000,
+                        "hi": 3400,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2500,
+                        "lo": 1800,
+                        "hi": 3200,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 42.1,
+                        "lo": 40.0,
+                        "hi": 44.2,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 42.5,
+                        "lo": 39.8,
+                        "hi": 45.2,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 41.3,
+                        "lo": 38.5,
+                        "hi": 44.1,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 39.0,
+                        "lo": 35.8,
+                        "hi": 42.2,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 36.5,
+                        "lo": 32.8,
+                        "hi": 40.2,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.15,
+                        "lo": 0.11,
+                        "hi": 0.19,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.15,
+                        "lo": 0.10,
+                        "hi": 0.20,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.16,
+                        "lo": 0.11,
+                        "hi": 0.21,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.18,
+                        "lo": 0.12,
+                        "hi": 0.24,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.20,
+                        "lo": 0.14,
+                        "hi": 0.26,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.30,
+                        "lo": 0.24,
+                        "hi": 0.36,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.29,
+                        "lo": 0.22,
+                        "hi": 0.36,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.31,
+                        "lo": 0.23,
+                        "hi": 0.39,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.34,
+                        "lo": 0.25,
+                        "hi": 0.43,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.37,
+                        "lo": 0.27,
+                        "hi": 0.47,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.10,
+                        "lo": 0.07,
+                        "hi": 0.13,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.10,
+                        "lo": 0.07,
+                        "hi": 0.13,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.11,
+                        "lo": 0.08,
+                        "hi": 0.14,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.13,
+                        "lo": 0.09,
+                        "hi": 0.17,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.15,
+                        "lo": 0.10,
+                        "hi": 0.20,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.55,
+                        "lo": 0.45,
+                        "hi": 0.65,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.57,
+                        "lo": 0.46,
+                        "hi": 0.68,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.52,
+                        "lo": 0.40,
+                        "hi": 0.64,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.45,
+                        "lo": 0.32,
+                        "hi": 0.58,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.38,
+                        "lo": 0.24,
+                        "hi": 0.52,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 3.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 8.5,
+                        "lo": 0.0,
+                        "hi": 22.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 42.0,
+                        "lo": 15.0,
+                        "hi": 90.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 240.0,
+                        "lo": 120.0,
+                        "hi": 400.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 480.0,
+                        "lo": 260.0,
+                        "hi": 740.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.18,
+                        "lo": 0.10,
+                        "hi": 0.26,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.19,
+                        "lo": 0.10,
+                        "hi": 0.28,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.17,
+                        "lo": 0.08,
+                        "hi": 0.26,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.15,
+                        "lo": 0.05,
+                        "hi": 0.25,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.12,
+                        "lo": 0.02,
+                        "hi": 0.22,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C011",
+            "centroid_lat": 23.0412,
+            "centroid_lng": 72.6102,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0277,
+                    "lng": 72.5957
+                },
+                "ne": {
+                    "lat": 23.0547,
+                    "lng": 72.6247
+                }
+            },
+            "confidence": 0.74,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2650,
+                        "lo": 2200,
+                        "hi": 3100,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2750,
+                        "lo": 2250,
+                        "hi": 3250,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2500,
+                        "lo": 2000,
+                        "hi": 3000,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2300,
+                        "lo": 1700,
+                        "hi": 2900,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2100,
+                        "lo": 1400,
+                        "hi": 2800,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2900,
+                        "lo": 2500,
+                        "hi": 3300,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3000,
+                        "lo": 2550,
+                        "hi": 3450,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2800,
+                        "lo": 2300,
+                        "hi": 3300,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2600,
+                        "lo": 2000,
+                        "hi": 3200,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2400,
+                        "lo": 1800,
+                        "hi": 3000,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 55,
+                        "lo": 40,
+                        "hi": 70,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 58,
+                        "lo": 42,
+                        "hi": 74,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 52,
+                        "lo": 36,
+                        "hi": 68,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 46,
+                        "lo": 30,
+                        "hi": 62,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 40,
+                        "lo": 25,
+                        "hi": 55,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 2800,
+                        "lo": 2200,
+                        "hi": 3400,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2950,
+                        "lo": 2300,
+                        "hi": 3600,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2650,
+                        "lo": 2000,
+                        "hi": 3300,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2400,
+                        "lo": 1750,
+                        "hi": 3050,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2200,
+                        "lo": 1550,
+                        "hi": 2850,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 43.5,
+                        "lo": 41.2,
+                        "hi": 45.8,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 44.0,
+                        "lo": 41.5,
+                        "hi": 46.5,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 42.8,
+                        "lo": 39.8,
+                        "hi": 45.8,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 40.5,
+                        "lo": 37.0,
+                        "hi": 44.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 37.8,
+                        "lo": 33.5,
+                        "hi": 42.1,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.12,
+                        "lo": 0.08,
+                        "hi": 0.16,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.12,
+                        "lo": 0.07,
+                        "hi": 0.17,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.13,
+                        "lo": 0.08,
+                        "hi": 0.18,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.15,
+                        "lo": 0.09,
+                        "hi": 0.21,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.17,
+                        "lo": 0.11,
+                        "hi": 0.23,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.25,
+                        "lo": 0.19,
+                        "hi": 0.31,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.24,
+                        "lo": 0.17,
+                        "hi": 0.31,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.26,
+                        "lo": 0.18,
+                        "hi": 0.34,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.29,
+                        "lo": 0.20,
+                        "hi": 0.38,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.32,
+                        "lo": 0.22,
+                        "hi": 0.42,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.08,
+                        "lo": 0.05,
+                        "hi": 0.11,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.08,
+                        "lo": 0.05,
+                        "hi": 0.11,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.09,
+                        "lo": 0.06,
+                        "hi": 0.12,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.11,
+                        "lo": 0.07,
+                        "hi": 0.15,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.13,
+                        "lo": 0.08,
+                        "hi": 0.18,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.62,
+                        "lo": 0.52,
+                        "hi": 0.72,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.64,
+                        "lo": 0.53,
+                        "hi": 0.75,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.60,
+                        "lo": 0.48,
+                        "hi": 0.72,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.53,
+                        "lo": 0.39,
+                        "hi": 0.67,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.45,
+                        "lo": 0.30,
+                        "hi": 0.60,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 2.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 6.0,
+                        "lo": 0.0,
+                        "hi": 20.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 40.0,
+                        "lo": 14.0,
+                        "hi": 88.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 230.0,
+                        "lo": 115.0,
+                        "hi": 390.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 460.0,
+                        "lo": 255.0,
+                        "hi": 720.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.25,
+                        "lo": 0.17,
+                        "hi": 0.33,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.26,
+                        "lo": 0.17,
+                        "hi": 0.35,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.24,
+                        "lo": 0.14,
+                        "hi": 0.34,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.22,
+                        "lo": 0.12,
+                        "hi": 0.32,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.20,
+                        "lo": 0.09,
+                        "hi": 0.31,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R009_C009",
+            "centroid_lat": 23.0682,
+            "centroid_lng": 72.5522,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0547,
+                    "lng": 72.5377
+                },
+                "ne": {
+                    "lat": 23.0817,
+                    "lng": 72.5667
+                }
+            },
+            "confidence": 0.71,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 1900,
+                        "lo": 1500,
+                        "hi": 2300,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2000,
+                        "lo": 1550,
+                        "hi": 2450,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1800,
+                        "lo": 1350,
+                        "hi": 2250,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1650,
+                        "lo": 1150,
+                        "hi": 2150,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1500,
+                        "lo": 1000,
+                        "hi": 2000,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2100,
+                        "lo": 1700,
+                        "hi": 2500,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2200,
+                        "lo": 1750,
+                        "hi": 2650,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2000,
+                        "lo": 1550,
+                        "hi": 2450,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1850,
+                        "lo": 1350,
+                        "hi": 2350,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1700,
+                        "lo": 1200,
+                        "hi": 2200,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 45,
+                        "lo": 32,
+                        "hi": 58,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 48,
+                        "lo": 34,
+                        "hi": 62,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 42,
+                        "lo": 28,
+                        "hi": 56,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 38,
+                        "lo": 24,
+                        "hi": 52,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 34,
+                        "lo": 20,
+                        "hi": 48,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 2400,
+                        "lo": 1800,
+                        "hi": 3000,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2550,
+                        "lo": 1900,
+                        "hi": 3200,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2250,
+                        "lo": 1650,
+                        "hi": 2850,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2050,
+                        "lo": 1400,
+                        "hi": 2700,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1850,
+                        "lo": 1200,
+                        "hi": 2500,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 40.5,
+                        "lo": 38.5,
+                        "hi": 42.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 41.0,
+                        "lo": 38.8,
+                        "hi": 43.2,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 39.8,
+                        "lo": 37.2,
+                        "hi": 42.4,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 37.5,
+                        "lo": 34.5,
+                        "hi": 40.5,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 35.0,
+                        "lo": 31.5,
+                        "hi": 38.5,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.22,
+                        "lo": 0.17,
+                        "hi": 0.27,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.22,
+                        "lo": 0.16,
+                        "hi": 0.28,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.23,
+                        "lo": 0.17,
+                        "hi": 0.29,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.26,
+                        "lo": 0.19,
+                        "hi": 0.33,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.28,
+                        "lo": 0.21,
+                        "hi": 0.35,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.38,
+                        "lo": 0.31,
+                        "hi": 0.45,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.37,
+                        "lo": 0.29,
+                        "hi": 0.45,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.39,
+                        "lo": 0.30,
+                        "hi": 0.48,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.42,
+                        "lo": 0.32,
+                        "hi": 0.52,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.45,
+                        "lo": 0.34,
+                        "hi": 0.56,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.15,
+                        "lo": 0.11,
+                        "hi": 0.19,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.15,
+                        "lo": 0.11,
+                        "hi": 0.19,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.16,
+                        "lo": 0.12,
+                        "hi": 0.20,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.18,
+                        "lo": 0.13,
+                        "hi": 0.23,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.20,
+                        "lo": 0.14,
+                        "hi": 0.26,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.35,
+                        "lo": 0.26,
+                        "hi": 0.44,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.37,
+                        "lo": 0.27,
+                        "hi": 0.47,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.33,
+                        "lo": 0.22,
+                        "hi": 0.44,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.28,
+                        "lo": 0.16,
+                        "hi": 0.40,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.22,
+                        "lo": 0.10,
+                        "hi": 0.34,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 4.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 10.0,
+                        "lo": 0.0,
+                        "hi": 25.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 48.0,
+                        "lo": 18.0,
+                        "hi": 95.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 260.0,
+                        "lo": 130.0,
+                        "hi": 420.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 500.0,
+                        "lo": 280.0,
+                        "hi": 760.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.08,
+                        "lo": -0.18,
+                        "hi": 0.02,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.07,
+                        "lo": -0.18,
+                        "hi": 0.04,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.09,
+                        "lo": -0.20,
+                        "hi": 0.02,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.12,
+                        "lo": -0.24,
+                        "hi": 0.00,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.15,
+                        "lo": -0.28,
+                        "hi": -0.02,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R009_C010",
+            "centroid_lat": 23.0682,
+            "centroid_lng": 72.5812,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0547,
+                    "lng": 72.5667
+                },
+                "ne": {
+                    "lat": 23.0817,
+                    "lng": 72.5957
+                }
+            },
+            "confidence": 0.73,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2100,
+                        "lo": 1700,
+                        "hi": 2500,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2200,
+                        "lo": 1750,
+                        "hi": 2650,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2000,
+                        "lo": 1550,
+                        "hi": 2450,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1850,
+                        "lo": 1350,
+                        "hi": 2350,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1700,
+                        "lo": 1200,
+                        "hi": 2200,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2500,
+                        "lo": 2100,
+                        "hi": 2900,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2600,
+                        "lo": 2150,
+                        "hi": 3050,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2400,
+                        "lo": 1900,
+                        "hi": 2900,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2200,
+                        "lo": 1700,
+                        "hi": 2700,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2000,
+                        "lo": 1500,
+                        "hi": 2500,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 52,
+                        "lo": 38,
+                        "hi": 66,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 55,
+                        "lo": 40,
+                        "hi": 70,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 48,
+                        "lo": 33,
+                        "hi": 63,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 42,
+                        "lo": 27,
+                        "hi": 57,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 37,
+                        "lo": 22,
+                        "hi": 52,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 2600,
+                        "lo": 2000,
+                        "hi": 3200,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2750,
+                        "lo": 2100,
+                        "hi": 3400,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2450,
+                        "lo": 1850,
+                        "hi": 3050,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2250,
+                        "lo": 1600,
+                        "hi": 2900,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2050,
+                        "lo": 1400,
+                        "hi": 2700,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 41.8,
+                        "lo": 39.8,
+                        "hi": 43.8,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 42.2,
+                        "lo": 39.9,
+                        "hi": 44.5,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 41.0,
+                        "lo": 38.2,
+                        "hi": 43.8,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 38.8,
+                        "lo": 35.6,
+                        "hi": 42.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 36.2,
+                        "lo": 32.5,
+                        "hi": 39.9,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.18,
+                        "lo": 0.13,
+                        "hi": 0.23,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.18,
+                        "lo": 0.12,
+                        "hi": 0.24,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.19,
+                        "lo": 0.13,
+                        "hi": 0.25,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.22,
+                        "lo": 0.15,
+                        "hi": 0.29,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.24,
+                        "lo": 0.17,
+                        "hi": 0.31,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.32,
+                        "lo": 0.25,
+                        "hi": 0.39,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.31,
+                        "lo": 0.23,
+                        "hi": 0.39,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.33,
+                        "lo": 0.24,
+                        "hi": 0.42,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.36,
+                        "lo": 0.26,
+                        "hi": 0.46,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.39,
+                        "lo": 0.28,
+                        "hi": 0.50,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.12,
+                        "lo": 0.09,
+                        "hi": 0.15,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.12,
+                        "lo": 0.09,
+                        "hi": 0.15,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.13,
+                        "lo": 0.09,
+                        "hi": 0.17,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.15,
+                        "lo": 0.10,
+                        "hi": 0.20,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.17,
+                        "lo": 0.12,
+                        "hi": 0.22,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.45,
+                        "lo": 0.36,
+                        "hi": 0.54,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.47,
+                        "lo": 0.37,
+                        "hi": 0.57,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.43,
+                        "lo": 0.32,
+                        "hi": 0.54,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.38,
+                        "lo": 0.26,
+                        "hi": 0.50,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.32,
+                        "lo": 0.19,
+                        "hi": 0.45,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 3.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 9.0,
+                        "lo": 0.0,
+                        "hi": 24.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 45.0,
+                        "lo": 16.0,
+                        "hi": 92.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 250.0,
+                        "lo": 125.0,
+                        "hi": 410.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 490.0,
+                        "lo": 270.0,
+                        "hi": 750.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.05,
+                        "lo": -0.05,
+                        "hi": 0.15,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.06,
+                        "lo": -0.05,
+                        "hi": 0.17,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.04,
+                        "lo": -0.07,
+                        "hi": 0.15,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.01,
+                        "lo": -0.11,
+                        "hi": 0.13,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.02,
+                        "lo": -0.14,
+                        "hi": 0.10,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R009_C011",
+            "centroid_lat": 23.0682,
+            "centroid_lng": 72.6102,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0547,
+                    "lng": 72.5957
+                },
+                "ne": {
+                    "lat": 23.0817,
+                    "lng": 72.6247
+                }
+            },
+            "confidence": 0.70,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2000,
+                        "lo": 1600,
+                        "hi": 2400,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2100,
+                        "lo": 1650,
+                        "hi": 2550,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1900,
+                        "lo": 1450,
+                        "hi": 2350,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1750,
+                        "lo": 1250,
+                        "hi": 2250,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1600,
+                        "lo": 1100,
+                        "hi": 2100,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2200,
+                        "lo": 1800,
+                        "hi": 2600,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2300,
+                        "lo": 1850,
+                        "hi": 2750,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2100,
+                        "lo": 1650,
+                        "hi": 2550,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1950,
+                        "lo": 1450,
+                        "hi": 2450,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1800,
+                        "lo": 1300,
+                        "hi": 2300,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 38,
+                        "lo": 25,
+                        "hi": 51,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 40,
+                        "lo": 27,
+                        "hi": 53,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 35,
+                        "lo": 22,
+                        "hi": 48,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 30,
+                        "lo": 17,
+                        "hi": 43,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 26,
+                        "lo": 14,
+                        "hi": 38,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 2200,
+                        "lo": 1600,
+                        "hi": 2800,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2350,
+                        "lo": 1700,
+                        "hi": 3000,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2050,
+                        "lo": 1450,
+                        "hi": 2650,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1850,
+                        "lo": 1200,
+                        "hi": 2500,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1650,
+                        "lo": 1000,
+                        "hi": 2300,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 41.2,
+                        "lo": 39.2,
+                        "hi": 43.2,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 41.6,
+                        "lo": 39.4,
+                        "hi": 43.8,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 40.5,
+                        "lo": 37.8,
+                        "hi": 43.2,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 38.2,
+                        "lo": 35.0,
+                        "hi": 41.4,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 35.8,
+                        "lo": 32.2,
+                        "hi": 39.4,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.20,
+                        "lo": 0.15,
+                        "hi": 0.25,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.20,
+                        "lo": 0.14,
+                        "hi": 0.26,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.21,
+                        "lo": 0.15,
+                        "hi": 0.27,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.24,
+                        "lo": 0.17,
+                        "hi": 0.31,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.26,
+                        "lo": 0.19,
+                        "hi": 0.33,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.35,
+                        "lo": 0.28,
+                        "hi": 0.42,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.34,
+                        "lo": 0.26,
+                        "hi": 0.42,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.36,
+                        "lo": 0.27,
+                        "hi": 0.45,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.39,
+                        "lo": 0.29,
+                        "hi": 0.49,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.42,
+                        "lo": 0.31,
+                        "hi": 0.53,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.13,
+                        "lo": 0.10,
+                        "hi": 0.16,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.13,
+                        "lo": 0.10,
+                        "hi": 0.16,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.14,
+                        "lo": 0.10,
+                        "hi": 0.18,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.16,
+                        "lo": 0.11,
+                        "hi": 0.21,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.18,
+                        "lo": 0.13,
+                        "hi": 0.23,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.40,
+                        "lo": 0.31,
+                        "hi": 0.49,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.42,
+                        "lo": 0.32,
+                        "hi": 0.52,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.38,
+                        "lo": 0.27,
+                        "hi": 0.49,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.33,
+                        "lo": 0.21,
+                        "hi": 0.45,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.27,
+                        "lo": 0.14,
+                        "hi": 0.40,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 3.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 9.5,
+                        "lo": 0.0,
+                        "hi": 24.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 46.0,
+                        "lo": 17.0,
+                        "hi": 94.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 255.0,
+                        "lo": 128.0,
+                        "hi": 415.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 495.0,
+                        "lo": 275.0,
+                        "hi": 755.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.05,
+                        "lo": -0.15,
+                        "hi": 0.05,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.04,
+                        "lo": -0.15,
+                        "hi": 0.07,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.06,
+                        "lo": -0.17,
+                        "hi": 0.05,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.09,
+                        "lo": -0.21,
+                        "hi": 0.03,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.12,
+                        "lo": -0.25,
+                        "hi": 0.01,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R011_C009",
+            "centroid_lat": 23.0142,
+            "centroid_lng": 72.5522,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0007,
+                    "lng": 72.5377
+                },
+                "ne": {
+                    "lat": 23.0277,
+                    "lng": 72.5667
+                }
+            },
+            "confidence": 0.69,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 1700,
+                        "lo": 1300,
+                        "hi": 2100,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1800,
+                        "lo": 1350,
+                        "hi": 2250,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1600,
+                        "lo": 1150,
+                        "hi": 2050,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1450,
+                        "lo": 950,
+                        "hi": 1950,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1300,
+                        "lo": 800,
+                        "hi": 1800,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 1900,
+                        "lo": 1500,
+                        "hi": 2300,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2000,
+                        "lo": 1550,
+                        "hi": 2450,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1800,
+                        "lo": 1350,
+                        "hi": 2250,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1650,
+                        "lo": 1150,
+                        "hi": 2150,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1500,
+                        "lo": 1000,
+                        "hi": 2000,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 35,
+                        "lo": 22,
+                        "hi": 48,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 38,
+                        "lo": 24,
+                        "hi": 52,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 32,
+                        "lo": 19,
+                        "hi": 45,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 28,
+                        "lo": 15,
+                        "hi": 41,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 24,
+                        "lo": 12,
+                        "hi": 36,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 2000,
+                        "lo": 1400,
+                        "hi": 2600,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2150,
+                        "lo": 1500,
+                        "hi": 2800,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1850,
+                        "lo": 1250,
+                        "hi": 2450,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1650,
+                        "lo": 1000,
+                        "hi": 2300,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1450,
+                        "lo": 800,
+                        "hi": 2100,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 39.5,
+                        "lo": 37.5,
+                        "hi": 41.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 40.0,
+                        "lo": 37.8,
+                        "hi": 42.2,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 38.8,
+                        "lo": 36.2,
+                        "hi": 41.4,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 36.5,
+                        "lo": 33.5,
+                        "hi": 39.5,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 34.0,
+                        "lo": 30.5,
+                        "hi": 37.5,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.28,
+                        "lo": 0.22,
+                        "hi": 0.34,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.28,
+                        "lo": 0.21,
+                        "hi": 0.35,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.29,
+                        "lo": 0.22,
+                        "hi": 0.36,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.32,
+                        "lo": 0.24,
+                        "hi": 0.40,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.35,
+                        "lo": 0.27,
+                        "hi": 0.43,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.42,
+                        "lo": 0.34,
+                        "hi": 0.50,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.41,
+                        "lo": 0.32,
+                        "hi": 0.50,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.43,
+                        "lo": 0.33,
+                        "hi": 0.53,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.46,
+                        "lo": 0.35,
+                        "hi": 0.57,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.49,
+                        "lo": 0.37,
+                        "hi": 0.61,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.18,
+                        "lo": 0.14,
+                        "hi": 0.22,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.18,
+                        "lo": 0.14,
+                        "hi": 0.22,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.19,
+                        "lo": 0.14,
+                        "hi": 0.24,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.21,
+                        "lo": 0.15,
+                        "hi": 0.27,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.23,
+                        "lo": 0.17,
+                        "hi": 0.29,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.28,
+                        "lo": 0.20,
+                        "hi": 0.36,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.30,
+                        "lo": 0.21,
+                        "hi": 0.39,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.26,
+                        "lo": 0.16,
+                        "hi": 0.36,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.22,
+                        "lo": 0.11,
+                        "hi": 0.33,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.18,
+                        "lo": 0.06,
+                        "hi": 0.30,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 5.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 12.0,
+                        "lo": 0.0,
+                        "hi": 28.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 52.0,
+                        "lo": 20.0,
+                        "hi": 100.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 280.0,
+                        "lo": 140.0,
+                        "hi": 440.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 520.0,
+                        "lo": 300.0,
+                        "hi": 780.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.22,
+                        "lo": -0.34,
+                        "hi": -0.10,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.21,
+                        "lo": -0.34,
+                        "hi": -0.08,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.24,
+                        "lo": -0.37,
+                        "hi": -0.11,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.28,
+                        "lo": -0.42,
+                        "hi": -0.14,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.32,
+                        "lo": -0.47,
+                        "hi": -0.17,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R011_C010",
+            "centroid_lat": 23.0142,
+            "centroid_lng": 72.5812,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0007,
+                    "lng": 72.5667
+                },
+                "ne": {
+                    "lat": 23.0277,
+                    "lng": 72.5957
+                }
+            },
+            "confidence": 0.75,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2400,
+                        "lo": 2000,
+                        "hi": 2800,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2500,
+                        "lo": 2050,
+                        "hi": 2950,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2300,
+                        "lo": 1800,
+                        "hi": 2800,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2100,
+                        "lo": 1550,
+                        "hi": 2650,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1900,
+                        "lo": 1350,
+                        "hi": 2450,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2800,
+                        "lo": 2400,
+                        "hi": 3200,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2900,
+                        "lo": 2450,
+                        "hi": 3350,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2700,
+                        "lo": 2200,
+                        "hi": 3200,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2500,
+                        "lo": 1950,
+                        "hi": 3050,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2300,
+                        "lo": 1750,
+                        "hi": 2850,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 75,
+                        "lo": 55,
+                        "hi": 95,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 80,
+                        "lo": 58,
+                        "hi": 102,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 70,
+                        "lo": 48,
+                        "hi": 92,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 62,
+                        "lo": 40,
+                        "hi": 84,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 55,
+                        "lo": 33,
+                        "hi": 77,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 2800,
+                        "lo": 2200,
+                        "hi": 3400,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2950,
+                        "lo": 2300,
+                        "hi": 3600,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2650,
+                        "lo": 2000,
+                        "hi": 3300,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2400,
+                        "lo": 1750,
+                        "hi": 3050,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2200,
+                        "lo": 1550,
+                        "hi": 2850,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 43.0,
+                        "lo": 41.0,
+                        "hi": 45.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 43.5,
+                        "lo": 41.2,
+                        "hi": 45.8,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 42.2,
+                        "lo": 39.5,
+                        "hi": 44.9,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 39.8,
+                        "lo": 36.8,
+                        "hi": 42.8,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 37.2,
+                        "lo": 33.8,
+                        "hi": 40.6,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.11,
+                        "lo": 0.07,
+                        "hi": 0.15,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.11,
+                        "lo": 0.06,
+                        "hi": 0.16,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.12,
+                        "lo": 0.07,
+                        "hi": 0.17,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.14,
+                        "lo": 0.08,
+                        "hi": 0.20,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.16,
+                        "lo": 0.10,
+                        "hi": 0.22,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.23,
+                        "lo": 0.17,
+                        "hi": 0.29,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.22,
+                        "lo": 0.15,
+                        "hi": 0.29,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.24,
+                        "lo": 0.16,
+                        "hi": 0.32,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.27,
+                        "lo": 0.18,
+                        "hi": 0.36,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.30,
+                        "lo": 0.20,
+                        "hi": 0.40,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.07,
+                        "lo": 0.05,
+                        "hi": 0.09,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.07,
+                        "lo": 0.05,
+                        "hi": 0.09,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.08,
+                        "lo": 0.05,
+                        "hi": 0.11,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.10,
+                        "lo": 0.06,
+                        "hi": 0.14,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.12,
+                        "lo": 0.07,
+                        "hi": 0.17,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.68,
+                        "lo": 0.58,
+                        "hi": 0.78,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.70,
+                        "lo": 0.59,
+                        "hi": 0.81,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.66,
+                        "lo": 0.53,
+                        "hi": 0.79,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.58,
+                        "lo": 0.43,
+                        "hi": 0.73,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.50,
+                        "lo": 0.34,
+                        "hi": 0.66,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 2.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 6.0,
+                        "lo": 0.0,
+                        "hi": 19.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 40.0,
+                        "lo": 13.0,
+                        "hi": 86.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 225.0,
+                        "lo": 112.0,
+                        "hi": 385.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 455.0,
+                        "lo": 252.0,
+                        "hi": 705.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.32,
+                        "lo": 0.23,
+                        "hi": 0.41,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.33,
+                        "lo": 0.23,
+                        "hi": 0.43,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.31,
+                        "lo": 0.21,
+                        "hi": 0.41,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.28,
+                        "lo": 0.17,
+                        "hi": 0.39,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.35,
+                        "lo": 0.24,
+                        "hi": 0.46,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R011_C011",
+            "centroid_lat": 23.0142,
+            "centroid_lng": 72.6102,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0007,
+                    "lng": 72.5957
+                },
+                "ne": {
+                    "lat": 23.0277,
+                    "lng": 72.6247
+                }
+            },
+            "confidence": 0.68,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 1800,
+                        "lo": 1400,
+                        "hi": 2200,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1900,
+                        "lo": 1450,
+                        "hi": 2350,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1700,
+                        "lo": 1250,
+                        "hi": 2150,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1550,
+                        "lo": 1050,
+                        "hi": 2050,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1400,
+                        "lo": 900,
+                        "hi": 1900,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2000,
+                        "lo": 1600,
+                        "hi": 2400,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2100,
+                        "lo": 1650,
+                        "hi": 2550,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1900,
+                        "lo": 1450,
+                        "hi": 2350,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1750,
+                        "lo": 1250,
+                        "hi": 2250,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1600,
+                        "lo": 1100,
+                        "hi": 2100,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 32,
+                        "lo": 20,
+                        "hi": 44,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 35,
+                        "lo": 22,
+                        "hi": 48,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 30,
+                        "lo": 17,
+                        "hi": 43,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 26,
+                        "lo": 13,
+                        "hi": 39,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 22,
+                        "lo": 10,
+                        "hi": 34,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 1800,
+                        "lo": 1200,
+                        "hi": 2400,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1950,
+                        "lo": 1300,
+                        "hi": 2600,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1650,
+                        "lo": 1050,
+                        "hi": 2250,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1450,
+                        "lo": 800,
+                        "hi": 2100,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1250,
+                        "lo": 600,
+                        "hi": 1900,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 40.2,
+                        "lo": 38.2,
+                        "hi": 42.2,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 40.6,
+                        "lo": 38.4,
+                        "hi": 42.8,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 39.5,
+                        "lo": 36.8,
+                        "hi": 42.2,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 37.2,
+                        "lo": 34.2,
+                        "hi": 40.2,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 34.8,
+                        "lo": 31.2,
+                        "hi": 38.4,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.24,
+                        "lo": 0.18,
+                        "hi": 0.30,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.24,
+                        "lo": 0.17,
+                        "hi": 0.31,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.25,
+                        "lo": 0.18,
+                        "hi": 0.32,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.28,
+                        "lo": 0.20,
+                        "hi": 0.36,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.30,
+                        "lo": 0.22,
+                        "hi": 0.38,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.40,
+                        "lo": 0.32,
+                        "hi": 0.48,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.39,
+                        "lo": 0.30,
+                        "hi": 0.48,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.41,
+                        "lo": 0.31,
+                        "hi": 0.51,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.44,
+                        "lo": 0.33,
+                        "hi": 0.55,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.47,
+                        "lo": 0.35,
+                        "hi": 0.59,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.16,
+                        "lo": 0.12,
+                        "hi": 0.20,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.16,
+                        "lo": 0.12,
+                        "hi": 0.20,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.17,
+                        "lo": 0.13,
+                        "hi": 0.21,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.19,
+                        "lo": 0.14,
+                        "hi": 0.24,
+                        "model": "sarima"
+                    },
+                    "180d": {
+                        "val": 0.21,
+                        "lo": 0.15,
+                        "hi": 0.27,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.30,
+                        "lo": 0.22,
+                        "hi": 0.38,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.32,
+                        "lo": 0.23,
+                        "hi": 0.41,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.28,
+                        "lo": 0.18,
+                        "hi": 0.38,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.24,
+                        "lo": 0.13,
+                        "hi": 0.35,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.20,
+                        "lo": 0.08,
+                        "hi": 0.32,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 4.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 11.0,
+                        "lo": 0.0,
+                        "hi": 26.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 50.0,
+                        "lo": 19.0,
+                        "hi": 98.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 270.0,
+                        "lo": 135.0,
+                        "hi": 430.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 510.0,
+                        "lo": 290.0,
+                        "hi": 770.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.18,
+                        "lo": -0.30,
+                        "hi": -0.06,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.17,
+                        "lo": -0.30,
+                        "hi": -0.04,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.20,
+                        "lo": -0.33,
+                        "hi": -0.07,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.24,
+                        "lo": -0.38,
+                        "hi": -0.10,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.28,
+                        "lo": -0.43,
+                        "hi": -0.13,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R010_C008",
+            "centroid_lat": 23.0412,
+            "centroid_lng": 72.5232,
+            "diagonal": {
+                "sw": {
+                    "lat": 23.0277,
+                    "lng": 72.5087
+                },
+                "ne": {
+                    "lat": 23.0547,
+                    "lng": 72.5377
+                }
+            },
+            "confidence": 0.78,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 3500,
+                        "lo": 3000,
+                        "hi": 4000,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3600,
+                        "lo": 3050,
+                        "hi": 4150,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 3300,
+                        "lo": 2700,
+                        "hi": 3900,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 3000,
+                        "lo": 2300,
+                        "hi": 3700,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2700,
+                        "lo": 2000,
+                        "hi": 3400,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 4200,
+                        "lo": 3700,
+                        "hi": 4700,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 4350,
+                        "lo": 3800,
+                        "hi": 4900,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 4000,
+                        "lo": 3400,
+                        "hi": 4600,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 3700,
+                        "lo": 3000,
+                        "hi": 4400,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 3400,
+                        "lo": 2700,
+                        "hi": 4100,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 185,
+                        "lo": 150,
+                        "hi": 220,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 192,
+                        "lo": 155,
+                        "hi": 229,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 175,
+                        "lo": 138,
+                        "hi": 212,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 158,
+                        "lo": 118,
+                        "hi": 198,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 140,
+                        "lo": 100,
+                        "hi": 180,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 5200,
+                        "lo": 4500,
+                        "hi": 5900,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 5400,
+                        "lo": 4600,
+                        "hi": 6200,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 4900,
+                        "lo": 4100,
+                        "hi": 5700,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 4500,
+                        "lo": 3600,
+                        "hi": 5400,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 4100,
+                        "lo": 3200,
+                        "hi": 5000,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 46.0,
+                        "lo": 43.5,
+                        "hi": 48.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 46.5,
+                        "lo": 43.8,
+                        "hi": 49.2,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 45.2,
+                        "lo": 42.0,
+                        "hi": 48.4,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 43.0,
+                        "lo": 39.5,
+                        "hi": 46.5,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 40.5,
+                        "lo": 36.5,
+                        "hi": 44.5,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.06,
+                        "lo": 0.03,
+                        "hi": 0.09,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.06,
+                        "lo": 0.02,
+                        "hi": 0.10,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.07,
+                        "lo": 0.03,
+                        "hi": 0.11,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.08,
+                        "lo": 0.04,
+                        "hi": 0.12,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.09,
+                        "lo": 0.05,
+                        "hi": 0.13,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.15,
+                        "lo": 0.10,
+                        "hi": 0.20,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.14,
+                        "lo": 0.08,
+                        "hi": 0.20,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.16,
+                        "lo": 0.09,
+                        "hi": 0.23,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.18,
+                        "lo": 0.10,
+                        "hi": 0.26,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.20,
+                        "lo": 0.12,
+                        "hi": 0.28,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.05,
+                        "lo": 0.03,
+                        "hi": 0.07,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.05,
+                        "lo": 0.03,
+                        "hi": 0.07,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.06,
+                        "lo": 0.04,
+                        "hi": 0.08,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.07,
+                        "lo": 0.05,
+                        "hi": 0.09,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.09,
+                        "lo": 0.06,
+                        "hi": 0.12,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.82,
+                        "lo": 0.72,
+                        "hi": 0.92,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.84,
+                        "lo": 0.73,
+                        "hi": 0.95,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.80,
+                        "lo": 0.68,
+                        "hi": 0.92,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.72,
+                        "lo": 0.57,
+                        "hi": 0.87,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.62,
+                        "lo": 0.45,
+                        "hi": 0.79,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 1.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3.0,
+                        "lo": 0.0,
+                        "hi": 14.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 28.0,
+                        "lo": 8.0,
+                        "hi": 68.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 180.0,
+                        "lo": 85.0,
+                        "hi": 320.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 380.0,
+                        "lo": 200.0,
+                        "hi": 620.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.62,
+                        "lo": 0.52,
+                        "hi": 0.72,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.63,
+                        "lo": 0.52,
+                        "hi": 0.74,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.60,
+                        "lo": 0.49,
+                        "hi": 0.71,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.58,
+                        "lo": 0.46,
+                        "hi": 0.70,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.65,
+                        "lo": 0.54,
+                        "hi": 0.76,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R015_C015",
+            "centroid_lat": 22.9062,
+            "centroid_lng": 72.6972,
+            "diagonal": {
+                "sw": {
+                    "lat": 22.8927,
+                    "lng": 72.6827
+                },
+                "ne": {
+                    "lat": 22.9197,
+                    "lng": 72.7117
+                }
+            },
+            "confidence": 0.82,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 1200,
+                        "lo": 900,
+                        "hi": 1500,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1300,
+                        "lo": 950,
+                        "hi": 1650,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1100,
+                        "lo": 800,
+                        "hi": 1400,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1000,
+                        "lo": 650,
+                        "hi": 1350,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 900,
+                        "lo": 550,
+                        "hi": 1250,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 1400,
+                        "lo": 1100,
+                        "hi": 1700,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1500,
+                        "lo": 1150,
+                        "hi": 1850,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1300,
+                        "lo": 950,
+                        "hi": 1650,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1150,
+                        "lo": 800,
+                        "hi": 1500,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1000,
+                        "lo": 650,
+                        "hi": 1350,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 22,
+                        "lo": 12,
+                        "hi": 32,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 24,
+                        "lo": 14,
+                        "hi": 34,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 20,
+                        "lo": 10,
+                        "hi": 30,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 18,
+                        "lo": 8,
+                        "hi": 28,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 15,
+                        "lo": 6,
+                        "hi": 24,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 1200,
+                        "lo": 800,
+                        "hi": 1600,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1300,
+                        "lo": 850,
+                        "hi": 1750,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1100,
+                        "lo": 700,
+                        "hi": 1500,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 950,
+                        "lo": 550,
+                        "hi": 1350,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 800,
+                        "lo": 400,
+                        "hi": 1200,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 36.5,
+                        "lo": 34.5,
+                        "hi": 38.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 37.0,
+                        "lo": 35.0,
+                        "hi": 39.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 35.8,
+                        "lo": 33.5,
+                        "hi": 38.1,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 33.5,
+                        "lo": 30.8,
+                        "hi": 36.2,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 31.0,
+                        "lo": 28.0,
+                        "hi": 34.0,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.42,
+                        "lo": 0.35,
+                        "hi": 0.49,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.42,
+                        "lo": 0.34,
+                        "hi": 0.50,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.43,
+                        "lo": 0.35,
+                        "hi": 0.51,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.46,
+                        "lo": 0.37,
+                        "hi": 0.55,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.48,
+                        "lo": 0.39,
+                        "hi": 0.57,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.58,
+                        "lo": 0.50,
+                        "hi": 0.66,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.57,
+                        "lo": 0.48,
+                        "hi": 0.66,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.59,
+                        "lo": 0.49,
+                        "hi": 0.69,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.62,
+                        "lo": 0.51,
+                        "hi": 0.73,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.65,
+                        "lo": 0.53,
+                        "hi": 0.77,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.22,
+                        "lo": 0.18,
+                        "hi": 0.26,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.22,
+                        "lo": 0.18,
+                        "hi": 0.26,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.23,
+                        "lo": 0.18,
+                        "hi": 0.28,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.25,
+                        "lo": 0.19,
+                        "hi": 0.31,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.27,
+                        "lo": 0.21,
+                        "hi": 0.33,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.18,
+                        "lo": 0.10,
+                        "hi": 0.26,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.20,
+                        "lo": 0.12,
+                        "hi": 0.28,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.16,
+                        "lo": 0.08,
+                        "hi": 0.24,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.12,
+                        "lo": 0.04,
+                        "hi": 0.20,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.08,
+                        "lo": 0.02,
+                        "hi": 0.14,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 6.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 14.0,
+                        "lo": 0.0,
+                        "hi": 32.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 58.0,
+                        "lo": 24.0,
+                        "hi": 110.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 300.0,
+                        "lo": 155.0,
+                        "hi": 470.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 550.0,
+                        "lo": 320.0,
+                        "hi": 820.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.35,
+                        "lo": -0.48,
+                        "hi": -0.22,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.34,
+                        "lo": -0.48,
+                        "hi": -0.20,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.37,
+                        "lo": -0.51,
+                        "hi": -0.23,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.40,
+                        "lo": -0.55,
+                        "hi": -0.25,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.44,
+                        "lo": -0.60,
+                        "hi": -0.28,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R015_C020",
+            "centroid_lat": 22.9062,
+            "centroid_lng": 72.8422,
+            "diagonal": {
+                "sw": {
+                    "lat": 22.8927,
+                    "lng": 72.8277
+                },
+                "ne": {
+                    "lat": 22.9197,
+                    "lng": 72.8567
+                }
+            },
+            "confidence": 0.65,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 3200,
+                        "lo": 2700,
+                        "hi": 3700,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3350,
+                        "lo": 2800,
+                        "hi": 3900,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 3000,
+                        "lo": 2400,
+                        "hi": 3600,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2750,
+                        "lo": 2100,
+                        "hi": 3400,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2500,
+                        "lo": 1800,
+                        "hi": 3200,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 3800,
+                        "lo": 3300,
+                        "hi": 4300,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3950,
+                        "lo": 3400,
+                        "hi": 4500,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 3600,
+                        "lo": 3000,
+                        "hi": 4200,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 3300,
+                        "lo": 2600,
+                        "hi": 4000,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 3000,
+                        "lo": 2300,
+                        "hi": 3700,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 95,
+                        "lo": 72,
+                        "hi": 118,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 100,
+                        "lo": 76,
+                        "hi": 124,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 88,
+                        "lo": 64,
+                        "hi": 112,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 78,
+                        "lo": 52,
+                        "hi": 104,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 68,
+                        "lo": 42,
+                        "hi": 94,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 4800,
+                        "lo": 4100,
+                        "hi": 5500,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 5000,
+                        "lo": 4200,
+                        "hi": 5800,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 4500,
+                        "lo": 3700,
+                        "hi": 5300,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 4100,
+                        "lo": 3200,
+                        "hi": 5000,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 3700,
+                        "lo": 2800,
+                        "hi": 4600,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 45.0,
+                        "lo": 42.8,
+                        "hi": 47.2,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 45.5,
+                        "lo": 43.0,
+                        "hi": 48.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 44.2,
+                        "lo": 41.2,
+                        "hi": 47.2,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 42.0,
+                        "lo": 38.5,
+                        "hi": 45.5,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 39.5,
+                        "lo": 35.5,
+                        "hi": 43.5,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.08,
+                        "lo": 0.05,
+                        "hi": 0.11,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.08,
+                        "lo": 0.04,
+                        "hi": 0.12,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.09,
+                        "lo": 0.05,
+                        "hi": 0.13,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.11,
+                        "lo": 0.06,
+                        "hi": 0.16,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.13,
+                        "lo": 0.07,
+                        "hi": 0.19,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.18,
+                        "lo": 0.12,
+                        "hi": 0.24,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.17,
+                        "lo": 0.10,
+                        "hi": 0.24,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.19,
+                        "lo": 0.11,
+                        "hi": 0.27,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.22,
+                        "lo": 0.13,
+                        "hi": 0.31,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.25,
+                        "lo": 0.15,
+                        "hi": 0.35,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.07,
+                        "lo": 0.05,
+                        "hi": 0.09,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.07,
+                        "lo": 0.05,
+                        "hi": 0.09,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.08,
+                        "lo": 0.05,
+                        "hi": 0.11,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.10,
+                        "lo": 0.06,
+                        "hi": 0.14,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.12,
+                        "lo": 0.07,
+                        "hi": 0.17,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.78,
+                        "lo": 0.68,
+                        "hi": 0.88,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.80,
+                        "lo": 0.69,
+                        "hi": 0.91,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.76,
+                        "lo": 0.63,
+                        "hi": 0.89,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.68,
+                        "lo": 0.53,
+                        "hi": 0.83,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.58,
+                        "lo": 0.42,
+                        "hi": 0.74,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 2.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 4.0,
+                        "lo": 0.0,
+                        "hi": 16.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 30.0,
+                        "lo": 9.0,
+                        "hi": 72.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 190.0,
+                        "lo": 90.0,
+                        "hi": 340.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 400.0,
+                        "lo": 210.0,
+                        "hi": 650.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.52,
+                        "lo": 0.42,
+                        "hi": 0.62,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.53,
+                        "lo": 0.42,
+                        "hi": 0.64,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.50,
+                        "lo": 0.39,
+                        "hi": 0.61,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.48,
+                        "lo": 0.36,
+                        "hi": 0.60,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.55,
+                        "lo": 0.44,
+                        "hi": 0.66,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R020_C015",
+            "centroid_lat": 22.7712,
+            "centroid_lng": 72.6972,
+            "diagonal": {
+                "sw": {
+                    "lat": 22.7577,
+                    "lng": 72.6827
+                },
+                "ne": {
+                    "lat": 22.7847,
+                    "lng": 72.7117
+                }
+            },
+            "confidence": 0.80,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 1000,
+                        "lo": 750,
+                        "hi": 1250,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1100,
+                        "lo": 800,
+                        "hi": 1400,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 950,
+                        "lo": 650,
+                        "hi": 1250,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 850,
+                        "lo": 550,
+                        "hi": 1150,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 750,
+                        "lo": 450,
+                        "hi": 1050,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 1100,
+                        "lo": 850,
+                        "hi": 1350,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1200,
+                        "lo": 900,
+                        "hi": 1500,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1050,
+                        "lo": 750,
+                        "hi": 1350,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 950,
+                        "lo": 650,
+                        "hi": 1250,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 850,
+                        "lo": 550,
+                        "hi": 1150,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 18,
+                        "lo": 10,
+                        "hi": 26,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 20,
+                        "lo": 12,
+                        "hi": 28,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 16,
+                        "lo": 8,
+                        "hi": 24,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 14,
+                        "lo": 6,
+                        "hi": 22,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 12,
+                        "lo": 5,
+                        "hi": 19,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 900,
+                        "lo": 500,
+                        "hi": 1300,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1000,
+                        "lo": 550,
+                        "hi": 1450,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 850,
+                        "lo": 450,
+                        "hi": 1250,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 750,
+                        "lo": 350,
+                        "hi": 1150,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 650,
+                        "lo": 250,
+                        "hi": 1050,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 34.0,
+                        "lo": 32.2,
+                        "hi": 35.8,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 34.5,
+                        "lo": 32.5,
+                        "hi": 36.5,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 33.5,
+                        "lo": 31.2,
+                        "hi": 35.8,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 31.5,
+                        "lo": 28.8,
+                        "hi": 34.2,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 29.5,
+                        "lo": 26.5,
+                        "hi": 32.5,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.52,
+                        "lo": 0.44,
+                        "hi": 0.60,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.52,
+                        "lo": 0.43,
+                        "hi": 0.61,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.53,
+                        "lo": 0.44,
+                        "hi": 0.62,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.55,
+                        "lo": 0.46,
+                        "hi": 0.64,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.57,
+                        "lo": 0.47,
+                        "hi": 0.67,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.65,
+                        "lo": 0.56,
+                        "hi": 0.74,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.64,
+                        "lo": 0.54,
+                        "hi": 0.74,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.66,
+                        "lo": 0.55,
+                        "hi": 0.77,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.69,
+                        "lo": 0.57,
+                        "hi": 0.81,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.72,
+                        "lo": 0.60,
+                        "hi": 0.84,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.26,
+                        "lo": 0.22,
+                        "hi": 0.30,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.26,
+                        "lo": 0.22,
+                        "hi": 0.30,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.27,
+                        "lo": 0.22,
+                        "hi": 0.32,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.29,
+                        "lo": 0.23,
+                        "hi": 0.35,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.31,
+                        "lo": 0.24,
+                        "hi": 0.38,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.12,
+                        "lo": 0.05,
+                        "hi": 0.19,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.14,
+                        "lo": 0.06,
+                        "hi": 0.22,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.10,
+                        "lo": 0.03,
+                        "hi": 0.17,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.08,
+                        "lo": 0.02,
+                        "hi": 0.14,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.06,
+                        "lo": 0.01,
+                        "hi": 0.11,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.5,
+                        "lo": 0.0,
+                        "hi": 8.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 16.0,
+                        "lo": 2.0,
+                        "hi": 36.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 65.0,
+                        "lo": 28.0,
+                        "hi": 120.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 320.0,
+                        "lo": 170.0,
+                        "hi": 500.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 580.0,
+                        "lo": 350.0,
+                        "hi": 850.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.48,
+                        "lo": -0.62,
+                        "hi": -0.34,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.47,
+                        "lo": -0.62,
+                        "hi": -0.32,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.50,
+                        "lo": -0.65,
+                        "hi": -0.35,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.54,
+                        "lo": -0.70,
+                        "hi": -0.38,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.58,
+                        "lo": -0.75,
+                        "hi": -0.41,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R012_C016",
+            "centroid_lat": 22.9872,
+            "centroid_lng": 72.7262,
+            "diagonal": {
+                "sw": {
+                    "lat": 22.9737,
+                    "lng": 72.7117
+                },
+                "ne": {
+                    "lat": 23.0007,
+                    "lng": 72.7407
+                }
+            },
+            "confidence": 0.77,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 2100,
+                        "lo": 1700,
+                        "hi": 2500,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2200,
+                        "lo": 1750,
+                        "hi": 2650,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2000,
+                        "lo": 1550,
+                        "hi": 2450,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1850,
+                        "lo": 1350,
+                        "hi": 2350,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1700,
+                        "lo": 1200,
+                        "hi": 2200,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 2500,
+                        "lo": 2100,
+                        "hi": 2900,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 2600,
+                        "lo": 2150,
+                        "hi": 3050,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2400,
+                        "lo": 1900,
+                        "hi": 2900,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2200,
+                        "lo": 1700,
+                        "hi": 2700,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2000,
+                        "lo": 1500,
+                        "hi": 2500,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 68,
+                        "lo": 50,
+                        "hi": 86,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 72,
+                        "lo": 53,
+                        "hi": 91,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 64,
+                        "lo": 45,
+                        "hi": 83,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 56,
+                        "lo": 37,
+                        "hi": 75,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 48,
+                        "lo": 30,
+                        "hi": 66,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 3000,
+                        "lo": 2400,
+                        "hi": 3600,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 3150,
+                        "lo": 2500,
+                        "hi": 3800,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 2800,
+                        "lo": 2150,
+                        "hi": 3450,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 2550,
+                        "lo": 1900,
+                        "hi": 3200,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 2300,
+                        "lo": 1650,
+                        "hi": 2950,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 42.5,
+                        "lo": 40.5,
+                        "hi": 44.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 43.0,
+                        "lo": 40.8,
+                        "hi": 45.2,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 41.8,
+                        "lo": 39.0,
+                        "hi": 44.6,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 39.5,
+                        "lo": 36.5,
+                        "hi": 42.5,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 37.0,
+                        "lo": 33.5,
+                        "hi": 40.5,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.14,
+                        "lo": 0.10,
+                        "hi": 0.18,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.14,
+                        "lo": 0.09,
+                        "hi": 0.19,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.15,
+                        "lo": 0.10,
+                        "hi": 0.20,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.17,
+                        "lo": 0.11,
+                        "hi": 0.23,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.19,
+                        "lo": 0.13,
+                        "hi": 0.25,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.28,
+                        "lo": 0.21,
+                        "hi": 0.35,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.27,
+                        "lo": 0.19,
+                        "hi": 0.35,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.29,
+                        "lo": 0.20,
+                        "hi": 0.38,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.32,
+                        "lo": 0.22,
+                        "hi": 0.42,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.35,
+                        "lo": 0.24,
+                        "hi": 0.46,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.09,
+                        "lo": 0.06,
+                        "hi": 0.12,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.09,
+                        "lo": 0.06,
+                        "hi": 0.12,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.10,
+                        "lo": 0.07,
+                        "hi": 0.13,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.12,
+                        "lo": 0.08,
+                        "hi": 0.16,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.14,
+                        "lo": 0.09,
+                        "hi": 0.19,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.58,
+                        "lo": 0.48,
+                        "hi": 0.68,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.60,
+                        "lo": 0.49,
+                        "hi": 0.71,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.56,
+                        "lo": 0.44,
+                        "hi": 0.68,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.48,
+                        "lo": 0.35,
+                        "hi": 0.61,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.40,
+                        "lo": 0.26,
+                        "hi": 0.54,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 3.0,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 8.0,
+                        "lo": 0.0,
+                        "hi": 22.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 44.0,
+                        "lo": 16.0,
+                        "hi": 90.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 245.0,
+                        "lo": 122.0,
+                        "hi": 405.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 485.0,
+                        "lo": 265.0,
+                        "hi": 745.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": 0.15,
+                        "lo": 0.05,
+                        "hi": 0.25,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": 0.16,
+                        "lo": 0.05,
+                        "hi": 0.27,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": 0.14,
+                        "lo": 0.03,
+                        "hi": 0.25,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": 0.11,
+                        "lo": 0.00,
+                        "hi": 0.22,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": 0.08,
+                        "lo": -0.04,
+                        "hi": 0.20,
+                        "model": "rf"
+                    }
+                }
+            }
+        },
+        {
+            "grid_id": "GJ_AHM_R018_C012",
+            "centroid_lat": 22.8252,
+            "centroid_lng": 72.6392,
+            "diagonal": {
+                "sw": {
+                    "lat": 22.8117,
+                    "lng": 72.6247
+                },
+                "ne": {
+                    "lat": 22.8387,
+                    "lng": 72.6537
+                }
+            },
+            "confidence": 0.79,
+            "predictions": {
+                "aqi_proxy": {
+                    "1d": {
+                        "val": 1500,
+                        "lo": 1150,
+                        "hi": 1850,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1600,
+                        "lo": 1200,
+                        "hi": 2000,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1400,
+                        "lo": 1000,
+                        "hi": 1800,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1250,
+                        "lo": 850,
+                        "hi": 1650,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1100,
+                        "lo": 700,
+                        "hi": 1500,
+                        "model": "prophet"
+                    }
+                },
+                "no2_ugm3": {
+                    "1d": {
+                        "val": 1700,
+                        "lo": 1350,
+                        "hi": 2050,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1800,
+                        "lo": 1400,
+                        "hi": 2200,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1600,
+                        "lo": 1200,
+                        "hi": 2000,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1450,
+                        "lo": 1050,
+                        "hi": 1850,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1300,
+                        "lo": 900,
+                        "hi": 1700,
+                        "model": "prophet"
+                    }
+                },
+                "so2_ugm3": {
+                    "1d": {
+                        "val": 28,
+                        "lo": 16,
+                        "hi": 40,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 30,
+                        "lo": 18,
+                        "hi": 42,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 26,
+                        "lo": 14,
+                        "hi": 38,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 22,
+                        "lo": 10,
+                        "hi": 34,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 18,
+                        "lo": 8,
+                        "hi": 28,
+                        "model": "prophet"
+                    }
+                },
+                "co_ugm3": {
+                    "1d": {
+                        "val": 1500,
+                        "lo": 1000,
+                        "hi": 2000,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 1650,
+                        "lo": 1100,
+                        "hi": 2200,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 1400,
+                        "lo": 900,
+                        "hi": 1900,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 1200,
+                        "lo": 700,
+                        "hi": 1700,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 1000,
+                        "lo": 500,
+                        "hi": 1500,
+                        "model": "prophet"
+                    }
+                },
+                "lst_celsius": {
+                    "1d": {
+                        "val": 37.5,
+                        "lo": 35.5,
+                        "hi": 39.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 38.0,
+                        "lo": 36.0,
+                        "hi": 40.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 36.8,
+                        "lo": 34.5,
+                        "hi": 39.1,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 34.5,
+                        "lo": 31.8,
+                        "hi": 37.2,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 32.0,
+                        "lo": 29.0,
+                        "hi": 35.0,
+                        "model": "prophet"
+                    }
+                },
+                "ndvi": {
+                    "1d": {
+                        "val": 0.38,
+                        "lo": 0.31,
+                        "hi": 0.45,
+                        "model": "lstm"
+                    },
+                    "7d": {
+                        "val": 0.38,
+                        "lo": 0.30,
+                        "hi": 0.46,
+                        "model": "lstm"
+                    },
+                    "30d": {
+                        "val": 0.39,
+                        "lo": 0.31,
+                        "hi": 0.47,
+                        "model": "lstm"
+                    },
+                    "90d": {
+                        "val": 0.42,
+                        "lo": 0.33,
+                        "hi": 0.51,
+                        "model": "lstm"
+                    },
+                    "180d": {
+                        "val": 0.44,
+                        "lo": 0.35,
+                        "hi": 0.53,
+                        "model": "lstm"
+                    }
+                },
+                "vhi": {
+                    "1d": {
+                        "val": 0.52,
+                        "lo": 0.44,
+                        "hi": 0.60,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.51,
+                        "lo": 0.42,
+                        "hi": 0.60,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.53,
+                        "lo": 0.43,
+                        "hi": 0.63,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.56,
+                        "lo": 0.45,
+                        "hi": 0.67,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.59,
+                        "lo": 0.47,
+                        "hi": 0.71,
+                        "model": "xgboost"
+                    }
+                },
+                "soil_moisture": {
+                    "1d": {
+                        "val": 0.20,
+                        "lo": 0.16,
+                        "hi": 0.24,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 0.20,
+                        "lo": 0.16,
+                        "hi": 0.24,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 0.21,
+                        "lo": 0.16,
+                        "hi": 0.26,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 0.23,
+                        "lo": 0.17,
+                        "hi": 0.29,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 0.25,
+                        "lo": 0.19,
+                        "hi": 0.31,
+                        "model": "prophet"
+                    }
+                },
+                "drought_risk": {
+                    "1d": {
+                        "val": 0.22,
+                        "lo": 0.14,
+                        "hi": 0.30,
+                        "model": "xgboost"
+                    },
+                    "7d": {
+                        "val": 0.24,
+                        "lo": 0.15,
+                        "hi": 0.33,
+                        "model": "xgboost"
+                    },
+                    "30d": {
+                        "val": 0.20,
+                        "lo": 0.11,
+                        "hi": 0.29,
+                        "model": "xgboost"
+                    },
+                    "90d": {
+                        "val": 0.16,
+                        "lo": 0.06,
+                        "hi": 0.26,
+                        "model": "xgboost"
+                    },
+                    "180d": {
+                        "val": 0.12,
+                        "lo": 0.03,
+                        "hi": 0.21,
+                        "model": "xgboost"
+                    }
+                },
+                "rainfall_mm": {
+                    "1d": {
+                        "val": 0.0,
+                        "lo": 0.0,
+                        "hi": 5.5,
+                        "model": "sarima"
+                    },
+                    "7d": {
+                        "val": 13.0,
+                        "lo": 0.0,
+                        "hi": 30.0,
+                        "model": "sarima"
+                    },
+                    "30d": {
+                        "val": 55.0,
+                        "lo": 22.0,
+                        "hi": 105.0,
+                        "model": "sarima"
+                    },
+                    "90d": {
+                        "val": 290.0,
+                        "lo": 148.0,
+                        "hi": 460.0,
+                        "model": "prophet"
+                    },
+                    "180d": {
+                        "val": 540.0,
+                        "lo": 310.0,
+                        "hi": 810.0,
+                        "model": "prophet"
+                    }
+                },
+                "carbon_balance": {
+                    "1d": {
+                        "val": -0.30,
+                        "lo": -0.42,
+                        "hi": -0.18,
+                        "model": "rf"
+                    },
+                    "7d": {
+                        "val": -0.29,
+                        "lo": -0.42,
+                        "hi": -0.16,
+                        "model": "rf"
+                    },
+                    "30d": {
+                        "val": -0.32,
+                        "lo": -0.45,
+                        "hi": -0.19,
+                        "model": "rf"
+                    },
+                    "90d": {
+                        "val": -0.36,
+                        "lo": -0.50,
+                        "hi": -0.22,
+                        "model": "rf"
+                    },
+                    "180d": {
+                        "val": -0.40,
+                        "lo": -0.55,
+                        "hi": -0.25,
+                        "model": "rf"
+                    }
+                }
+            }
+        }
+    ]
+}
