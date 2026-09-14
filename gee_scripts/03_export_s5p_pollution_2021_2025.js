@@ -3,29 +3,30 @@
 var START = ee.Date('2021-01-01');
 var END = ee.Date('2026-01-01');
 var WINDOW_DAYS = 15;
-var GRID_METERS = 3000;
-var UTM = ee.Projection('EPSG:32643');
-var CITY_ID = 'GJ_AHM';
-var studyArea = ee.Geometry.Rectangle([72.057, 22.544, 73.084, 23.502], null, false);
+var CITY_CODE = 'GJ_AHM';
+var CENTER_LON = 72.5714;
+var CENTER_LAT = 23.0225;
+var CELL_SIZE_M = 3000;
+var BUFFER_M = 50000;
+var UTM_43N = ee.Projection('EPSG:32643');
+var centerPoint = ee.Geometry.Point([CENTER_LON, CENTER_LAT]);
+var studyArea = centerPoint.buffer(BUFFER_M).bounds();
 
 function buildGrid() {
-  var bounds = studyArea.bounds(1, UTM), ring = ee.List(bounds.coordinates().get(0));
-  var ll = ee.List(ring.get(0)), ur = ee.List(ring.get(2));
-  var xMin = ee.Number(ll.get(0)), yMin = ee.Number(ll.get(1));
-  var cols = ee.Number(ur.get(0)).subtract(xMin).divide(GRID_METERS).ceil();
-  var rows = ee.Number(ur.get(1)).subtract(yMin).divide(GRID_METERS).ceil();
-  return ee.FeatureCollection(ee.List.sequence(0, rows.subtract(1)).map(function(row) {
-    row = ee.Number(row);
-    return ee.List.sequence(0, cols.subtract(1)).map(function(col) {
-      col = ee.Number(col);
-      var cell = ee.Geometry.Rectangle([
-        xMin.add(col.multiply(GRID_METERS)), yMin.add(row.multiply(GRID_METERS)),
-        xMin.add(col.add(1).multiply(GRID_METERS)), yMin.add(row.add(1).multiply(GRID_METERS))
-      ], UTM, false).intersection(studyArea, 1);
-      var c = cell.centroid(1).transform('EPSG:4326', 1).coordinates();
-      return ee.Feature(cell, {grid_id: ee.String(CITY_ID).cat('_R').cat(row.format('%03d')).cat('_C').cat(col.format('%03d')), row_idx: row, col_idx: col, centroid_lat: ee.Number(c.get(1)), centroid_lng: ee.Number(c.get(0))});
+  var rawGrid = studyArea.coveringGrid(UTM_43N, CELL_SIZE_M);
+  var studyAreaUTM = studyArea.transform(UTM_43N, 1);
+  var swCorner = ee.List(studyAreaUTM.coordinates().get(0)).get(0);
+  var originX = ee.Number(ee.List(swCorner).get(0));
+  var originY = ee.Number(ee.List(swCorner).get(1));
+  return rawGrid.map(function(cell) {
+      var centroidWGS = cell.geometry().centroid(1);
+      var centroidUTM = centroidWGS.transform(UTM_43N, 1);
+      var coords = centroidUTM.coordinates();
+      var col = ee.Number(coords.get(0)).subtract(originX).divide(CELL_SIZE_M).floor().int();
+      var row = ee.Number(coords.get(1)).subtract(originY).divide(CELL_SIZE_M).floor().int();
+      var id = ee.String(CITY_CODE).cat('_R').cat(ee.String('00').cat(row.format('%d')).slice(-3)).cat('_C').cat(ee.String('00').cat(col.format('%d')).slice(-3));
+      return cell.set({grid_id: id, row_idx: row, col_idx: col, centroid_lat: centroidWGS.coordinates().get(1), centroid_lng: centroidWGS.coordinates().get(0)});
     });
-  }).flatten());
 }
 var grids = buildGrid();
 

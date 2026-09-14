@@ -1,20 +1,19 @@
 /** BHOOMI -- Script 08: 15-day Sentinel-2 water presence plus JRC static water history. */
 
 var START = ee.Date('2021-01-01'), END = ee.Date('2026-01-01');
-var WINDOW_DAYS = 15, GRID_METERS = 3000, UTM = ee.Projection('EPSG:32643'), CITY_ID = 'GJ_AHM';
-var studyArea = ee.Geometry.Rectangle([72.057, 22.544, 73.084, 23.502], null, false);
+var WINDOW_DAYS = 15, CELL_SIZE_M = 3000, CITY_CODE = 'GJ_AHM', CENTER_LON = 72.5714, CENTER_LAT = 23.0225, BUFFER_M = 50000;
+var UTM_43N = ee.Projection('EPSG:32643');
+var studyArea = ee.Geometry.Point([CENTER_LON, CENTER_LAT]).buffer(BUFFER_M).bounds();
 
 function buildGrid() {
-  var b = studyArea.bounds(1, UTM), ring = ee.List(b.coordinates().get(0)), ll = ee.List(ring.get(0)), ur = ee.List(ring.get(2));
-  var x = ee.Number(ll.get(0)), y = ee.Number(ll.get(1)), nc = ee.Number(ur.get(0)).subtract(x).divide(GRID_METERS).ceil(), nr = ee.Number(ur.get(1)).subtract(y).divide(GRID_METERS).ceil();
-  return ee.FeatureCollection(ee.List.sequence(0, nr.subtract(1)).map(function(row) {
-    return ee.List.sequence(0, nc.subtract(1)).map(function(col) {
-      row = ee.Number(row); col = ee.Number(col);
-      var g = ee.Geometry.Rectangle([x.add(col.multiply(GRID_METERS)), y.add(row.multiply(GRID_METERS)), x.add(col.add(1).multiply(GRID_METERS)), y.add(row.add(1).multiply(GRID_METERS))], UTM, false).intersection(studyArea, 1);
-      var c = g.centroid(1).transform('EPSG:4326', 1).coordinates();
-      return ee.Feature(g, {grid_id: ee.String(CITY_ID).cat('_R').cat(row.format('%03d')).cat('_C').cat(col.format('%03d')), row_idx: row, col_idx: col, centroid_lat: ee.Number(c.get(1)), centroid_lng: ee.Number(c.get(0))});
+  var rawGrid = studyArea.coveringGrid(UTM_43N, CELL_SIZE_M), a = studyArea.transform(UTM_43N, 1);
+  var sw = ee.List(a.coordinates().get(0)).get(0), ox = ee.Number(ee.List(sw).get(0)), oy = ee.Number(ee.List(sw).get(1));
+  return rawGrid.map(function(cell) {
+      var c = cell.geometry().centroid(1), p = c.transform(UTM_43N, 1).coordinates();
+      var col = ee.Number(p.get(0)).subtract(ox).divide(CELL_SIZE_M).floor().int(), row = ee.Number(p.get(1)).subtract(oy).divide(CELL_SIZE_M).floor().int();
+      var id = ee.String(CITY_CODE).cat('_R').cat(ee.String('00').cat(row.format('%d')).slice(-3)).cat('_C').cat(ee.String('00').cat(col.format('%d')).slice(-3));
+      return cell.set({grid_id: id, row_idx: row, col_idx: col, centroid_lat: c.coordinates().get(1), centroid_lng: c.coordinates().get(0)});
     });
-  }).flatten());
 }
 var grids = buildGrid();
 
